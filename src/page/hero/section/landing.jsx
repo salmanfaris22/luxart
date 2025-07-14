@@ -45,7 +45,7 @@ const landing = () => {
         <div className="landing__buttons">
           <button className="btn btn--primary" onClick={handleWhatsAppClick}>
             <img src={phoneIcon} alt="Phone Icon" className="btn__icon" />
-            Enquire Now
+            Enquire now
           </button>
           <Link to="/projects">
             <button className="btn btn--secondary">Explore Projects</button>

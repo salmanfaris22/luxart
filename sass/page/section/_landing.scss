@@ -5,7 +5,7 @@
   text-align: center;
   text-align: center;
   padding: 100px 20px;
-  padding-top: 71px;
+  padding-top: 0px;
   height: 45vh;
 
   @include responsive.respond(phone) {
@@ -140,10 +140,10 @@
       &--primary {
         display: flex;
         align-items: center;
-        background: linear-gradient(90deg, #f4d300, #ab7e0d);
+        background: linear-gradient(90deg, #ab7e0d, #f4d300);
         border: none;
         border-radius: 5px;
-        padding: 9px 20px;
+        padding: 9px 20px 9px 18px;
         color: #000;
         font-weight: 500;
         font-size: 1rem;
@@ -216,18 +216,18 @@
       &__icon {
         width: auto;
         height: auto;
-        margin-right: 8px;
+        // margin-right: 8px;
 
         @include responsive.respond(phone) {
           width: 20px;
           height: 20px;
-          margin-right: 6px;
+          // margin-right: 6px;
         }
 
         @include responsive.respond(smallPhone) {
           width: 20px;
           height: 20px;
-          margin-right: 5px;
+          // margin-right: 5px;
         }
       }
     }

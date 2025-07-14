@@ -95,6 +95,9 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     area: "2500  sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kondoty+(2).jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/kondotty.jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/kondotty+(2).jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/kondotty+(1).jpeg"
     ],
     pdfLink: null,
     summary:
