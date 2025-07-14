@@ -64,10 +64,12 @@ The property is well-connected to major roads and public transportation, making 
     experience: "12 years experience",
     area: "3500 sq.ft",
     images: [
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadb.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadc.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangad.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadd.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadd.jpg",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadb.jpg",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangad.jpg",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadc.jpg",//4
+     
+
     ],
     pdfLink: null,
     summary:
