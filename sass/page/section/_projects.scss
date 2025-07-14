@@ -471,7 +471,7 @@
       gap: 0.75rem;
     }
     &__card--azure {
-      height: 260px; // reverted back to original
+      height: 300px; // reverted back to original
       .projects__image {
         max-height: 260px; // reverted back to original
       }
@@ -479,7 +479,7 @@
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 272px !important; // increased and made consistent
+      height: 315px !important; // increased and made consistent
       .projects__image {
         max-height: 360px; // increased from 260px
       }
@@ -521,7 +521,7 @@
       }
     }
     &__card--azure {
-      height: 272px; // reverted back to original
+      height: 295px; // reverted back to original
       .projects__image {
         max-height: 260px; // reverted back to original
       }
