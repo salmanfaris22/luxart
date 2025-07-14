@@ -10,6 +10,11 @@
   overflow: hidden;
   height: 40vh;
 
+  @include respond(bigTablets) {
+    padding: 8rem 1rem 3rem 1rem;
+    height: 20vh;
+  }
+
   &__content {
     position: relative;
     z-index: 10;
@@ -27,6 +32,11 @@
         background-clip: text;
         color: transparent;
       }
+
+      @include respond(bigTablets) {
+        font-size: 2.7rem;
+      }
+
     }
 
     p {
@@ -37,6 +47,10 @@
       color: #fff9d3;
       opacity: 0.8;
       padding-bottom: 15px;
+
+      @include respond(bigTablets) {
+        font-size: 16px;
+      }
     }
 
     .enquire-btn {
@@ -168,14 +182,14 @@
 // Tablet
 @include respond(tablets) {
   .detail-section {
-    padding: 9rem 1rem 0rem 1rem;
+    padding: 9rem 2rem 0rem 2rem;
     height: 28vh;
     &__content {
       h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 18px;
       }
       .enquire-btn {
         font-size: 0.95rem;

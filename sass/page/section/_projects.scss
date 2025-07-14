@@ -5,6 +5,10 @@
   background-color: #000;
   color: #fff;
 
+  @include respond(bigTablets) {
+   padding: 0px 104px 0px 104px
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -27,6 +31,10 @@
       font-weight: 400;
       line-height: 0;
 
+      @include respond(bigTablets) {
+        font-size: 2.7rem;
+      }
+
       span {
         background: linear-gradient(90deg, #f4d300, #ab7e0d);
         -webkit-background-clip: text;
@@ -41,6 +49,10 @@
       max-width: 700px;
       margin-top: 0.5rem;
       color: #fff;
+
+      @include respond(bigTablets) {
+        font-size: 0.9rem;
+      }
     }
 
     .projects__button {
@@ -315,6 +327,11 @@
   // Specific card size styles
   &__card--azure {
     height: 600px; // adjusted for better proportion
+
+    @include respond(bigTablets) {
+      height: 350px;
+    }
+
     .projects__image {
       height: 100%;
       max-height: 540px; // taller than emerald but not too tall
@@ -329,6 +346,11 @@
 
   &__card--emerald {
     height: 500px; // increased from 550px
+
+    @include respond(bigTablets) {
+      height: 350px;
+    }
+
     .projects__image {
       height: 100%;
       max-height: 590px; // increased from 490px
@@ -343,6 +365,11 @@
 
   &__card--crystal-left {
     height: 500px; // matching emerald card height
+
+    @include respond(bigTablets) {
+      height: 350px;
+    }
+
     .projects__image {
       height: 100%;
       max-height: 590px; // matching emerald image height
@@ -357,6 +384,11 @@
 
   &__card--crystal-right {
     height: 600px; // matching azure
+
+    @include respond(bigTablets) {
+      height: 350px;
+    }
+
     .projects__image {
       height: 100%;
       max-height: 540px;
@@ -401,14 +433,15 @@
       align-items: flex-start;
       gap: 1rem;
       .projects__title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
       }
       .projects__subtitle {
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
       .projects__button {
         padding: 8px 14px;
         font-size: 0.95rem;
+        margin-top: 0px;
       }
     }
     &__grid {

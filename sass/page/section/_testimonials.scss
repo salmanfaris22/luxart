@@ -29,6 +29,16 @@
       line-height: 1;
     }
 
+    @include respond(tablets) {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    @include respond(bigTablets) {
+      font-size: 2.7rem;
+      line-height: 1;
+    }
+
     .highlight {
       background: linear-gradient(90deg, #f4d300, #ab7e0d);
       -webkit-background-clip: text;
@@ -51,6 +61,13 @@
     @include respond(phone) {
       padding: 1.5rem;
     }
+    @include respond(bigTablets) {
+      padding: 1rem 0rem;
+    }
+
+    @include respond(tablets) {
+      padding: 0rem 0rem;
+    }
 
     .testimonial-swiper {
       width: 100%;
@@ -59,6 +76,16 @@
 
       @include respond(smallPhone) {
         padding: 0rem 0rem 2rem 0rem;
+      }
+      @include respond(tablets) {
+        padding: 0 0 2rem 0;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      @include respond(bigTablets) {
+        padding: 0 0 2.5rem 0; // Slightly more padding for larger screens
+        max-width: 990px;      // Wider for big tablets
+        margin: 0 auto;
       }
     }
 
@@ -247,8 +274,8 @@
 
   .swiper-button-next {
     right: -20px;
-    @media (min-width: 768px) {
-      right: -50px;
+    @include respond(tablets) {
+      right: -30px;
     }
     @include respond(smallPhone) {
       right: -10px;
@@ -260,8 +287,8 @@
 
   .swiper-button-prev {
     left: -20px;
-    @media (min-width: 768px) {
-      left: -50px;
+    @include respond(tablets) {
+      left: -30px;
     }
     @include respond(smallPhone) {
       left: -10px;

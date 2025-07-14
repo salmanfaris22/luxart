@@ -39,19 +39,23 @@
       color: transparent;
     }
 
-    @media (min-width: 400px) {
+    @include respond(smallPhone) {
       font-size: 1.5rem;
     }
 
-    @media (min-width: 600px) {
+    @include respond(phone) {
       font-size: 2rem;
     }
 
-    @media (min-width: 768px) {
-      font-size: 2rem;
+    @include respond(tablets) {
+      font-size: 2.5rem;
     }
 
-    @media (min-width: 1024px) {
+    @include respond(bigTablets) {
+      font-size: 2.7rem;
+    }
+
+    @include respond(desktop) {
       font-size: 3rem;
     }
   }
