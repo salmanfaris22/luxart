@@ -4,7 +4,7 @@ import kalamassery from "../../../assets/kalamassery.pdf";
 const projectData = [
   {
     id: "cheekkilode",
-    projectBy: "luxart",
+    projectBy: "rasheed",
     title: "Cheekkilode",
     experience: "15 years experience",
     location: "Cheekkilode, Kozhikode",
@@ -24,8 +24,8 @@ Each unit is designed with attention to detail, featuring high-quality finishes,
 
 Residents can enjoy the convenience of nearby schools, hospitals, and shopping centers, while still maintaining a peaceful living environment. The property's strategic location provides easy access to major roads and public transportation, making daily commutes hassle-free.`,
 
-    client: null,
-    architect: "P C Rasheed",
+    client: "Cheekkilode",
+    architect: null,
     projectType: "Residential Project",
     designTeam: null,
     contractor: null,
@@ -133,6 +133,7 @@ The location provides excellent connectivity to nearby towns and cities, making 
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery6+(1).jpg",
      
     ],
+    
     pdfLink: kalamassery,
     summary:
       "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",

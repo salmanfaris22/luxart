@@ -75,7 +75,8 @@
       overflow: visible;
 
       @include respond(smallPhone) {
-        padding: 0rem 0rem 2rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
+        height: 35vh;
       }
       @include respond(tablets) {
         padding: 0 0 2rem 0;
@@ -86,6 +87,40 @@
         padding: 0 0 2.5rem 0; // Slightly more padding for larger screens
         max-width: 990px;      // Wider for big tablets
         margin: 0 auto;
+      }
+
+      .swiper-slide {
+        // Default: small card
+        .testimonial-card {
+          height: 320px;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          opacity: 0.5;
+          transform: scale(0.85);
+        }
+
+        &.swiper-slide-active {
+          .testimonial-card {
+            height: 200px; // Highlighted, larger
+            opacity: 1;
+            transform: scale(1);
+            // box-shadow: 0 10px 32px rgba(244, 211, 0, 0.2);
+            z-index: 2;
+
+            @include respond(smallPhone) {
+              height: 160px;
+            }
+          }
+        }
+
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+          .testimonial-card {
+            height: 190px; // Slightly smaller than default
+            opacity: 0.7;
+            transform: scale(0.9);
+            z-index: 1;
+          }
+        }
       }
     }
 
@@ -324,5 +359,39 @@
 @media (hover: none) and (pointer: coarse) {
   .testimonial-card {
     transform: none !important;
+  }
+}
+
+// For desktop and larger screens
+.testimonial-swiper {
+  .swiper-slide {
+    .testimonial-card {
+      height: 220px; // was 320px
+    }
+    &.swiper-slide-active {
+      .testimonial-card {
+        height: 270px; // was 400px
+      }
+    }
+    &.swiper-slide-prev,
+    &.swiper-slide-next {
+      .testimonial-card {
+        height: 180px; // was 280px
+      }
+    }
+  }
+}
+
+// For tablets
+@include respond(tablets) {
+  .testimonial-swiper {
+    .swiper-slide {
+      .testimonial-card { height: 150px; } // was 220px
+      &.swiper-slide-active .testimonial-card { height: 180px; } // was 270px
+      &.swiper-slide-prev,
+      &.swiper-slide-next {
+        .testimonial-card { height: 120px; } // was 180px
+      }
+    }
   }
 }

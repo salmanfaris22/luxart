@@ -16,10 +16,26 @@ import "swiper/css/pagination";
 import locationIcon from "../../../assets/footer1.svg";
 import architectIcon from "../../../assets/architect.svg";
 import areaIcon from "../../../assets/area.svg";
+import UserIcon from "../../../assets/user.png";
 
 export default function NewProjectDetail() {
   const { projectId } = useParams();
+  // Filter only imthiyas projects
   const project = projectData.find((p) => p.id === projectId);
+
+  // Dynamically filter projects by the current project's projectBy
+  const filteredProjects = projectData.filter(
+    (p) => p.projectBy === project?.projectBy
+  );
+
+  const currentIndex = filteredProjects.findIndex((p) => p.id === projectId);
+  const previousIndex =
+    currentIndex > 0 ? currentIndex - 1 : filteredProjects.length - 1;
+  const nextIndex =
+    currentIndex < filteredProjects.length - 1 ? currentIndex + 1 : 0;
+  const previousProject = filteredProjects[previousIndex];
+  const nextProject = filteredProjects[nextIndex];
+   console.log("imthiyasProjects", filteredProjects);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -39,15 +55,6 @@ export default function NewProjectDetail() {
     }
   };
 
-  // Get previous and next projects
-  const currentIndex = projectData.findIndex((p) => p.id === projectId);
-  const previousIndex =
-    currentIndex > 0 ? currentIndex - 1 : projectData.length - 1;
-  const nextIndex =
-    currentIndex < projectData.length - 1 ? currentIndex + 1 : 0;
-  const previousProject = projectData[previousIndex];
-  const nextProject = projectData[nextIndex];
-
   // Function to trim long project names
   const trimTitle = (title, maxLength = 20) => {
     return title.length > maxLength
@@ -62,6 +69,8 @@ export default function NewProjectDetail() {
   const handleNextProject = () => {
     window.location.href = `/projects/${nextProject.id}`;
   };
+
+  
 
   return (
     <section className="new-project-detail">
@@ -83,14 +92,10 @@ export default function NewProjectDetail() {
                 <img src={areaIcon} alt="Area" className="metadata-icon" />
                 <span>{project.area}</span>
               </div>
-              {project?.architect && (
+              {project?.client && (
                 <div className="metadata-item">
-                  <img
-                    src={architectIcon}
-                    alt="Architect"
-                    className="metadata-icon"
-                  />
-                  <span>{project?.architect}</span>
+                  <img src={UserIcon} alt="Client" className="metadata-icon" />
+                  <span>{project?.client}</span>
                 </div>
               )}
             </div>

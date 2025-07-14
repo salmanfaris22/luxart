@@ -130,6 +130,8 @@ const Projects = () => {
     groupedProjects.push(displayProjects.slice(i, i + 2));
   }
 
+  
+
   if (noProjects) {
     return (
       <div className="projects">
@@ -172,11 +174,11 @@ const Projects = () => {
             )}
           </p>
         </div>
-        {selectedArchitect && isProjectsPage && (
+        {/* {selectedArchitect && isProjectsPage && (
           <button className="projects__button" onClick={clearFilter}>
             Show Main Projects
           </button>
-        )}
+        )} */}
         {!isProjectsPage && (
           <button className="projects__button" onClick={handleShowAll}>
             View Projects
