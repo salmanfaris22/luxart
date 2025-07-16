@@ -65,7 +65,7 @@ const ChooseExpert = () => {
   };
 
   return (
-    <section className="choose-expert">
+    <section className="choose-expert" id="projects">
       <h2 className="choose-expert__title">
         Our empanelled <span className="highlight">Architects</span>
       </h2>
