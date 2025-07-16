@@ -54,19 +54,24 @@
     margin: 0 auto;
     padding: 2rem 4rem;
     position: relative;
+    min-height: 400px;
 
     @include respond(smallPhone) {
       padding: 1rem 1rem 1rem 0rem;
+      min-height: 300px;
     }
     @include respond(phone) {
       padding: 1.5rem;
+      min-height: 350px;
     }
     @include respond(bigTablets) {
       padding: 1rem 0rem;
+      min-height: 380px;
     }
 
     @include respond(tablets) {
       padding: 0rem 0rem;
+      min-height: 350px;
     }
 
     .testimonial-swiper {
@@ -143,6 +148,7 @@
         opacity: 1;
         transform: scale(1);
         z-index: 2;
+        visibility: visible;
       }
 
       &.swiper-slide-prev,
@@ -150,6 +156,7 @@
         opacity: 0.4;
         transform: scale(0.85);
         z-index: 1;
+        visibility: visible;
 
         @include respond(smallPhone) {
           opacity: 0;

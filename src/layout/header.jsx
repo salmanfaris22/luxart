@@ -36,6 +36,14 @@ const Header = () => {
         const testimonialsSection = document.getElementById("testimonials");
         if (testimonialsSection) {
           testimonialsSection.scrollIntoView({ behavior: "smooth" });
+          // Force swiper update after scrolling
+          setTimeout(() => {
+            const swiperElement = testimonialsSection.querySelector('.swiper');
+            if (swiperElement && swiperElement.swiper) {
+              swiperElement.swiper.update();
+              swiperElement.swiper.slideTo(1, 0, false);
+            }
+          }, 500);
           window.history.replaceState({}, document.title);
         }
         setIsNavigating(false);
@@ -75,6 +83,14 @@ const Header = () => {
         const testimonialsSection = document.getElementById("testimonials");
         if (testimonialsSection) {
           testimonialsSection.scrollIntoView({ behavior: "smooth" });
+          // Force swiper update after scrolling
+          setTimeout(() => {
+            const swiperElement = testimonialsSection.querySelector('.swiper');
+            if (swiperElement && swiperElement.swiper) {
+              swiperElement.swiper.update();
+              swiperElement.swiper.slideTo(1, 0, false);
+            }
+          }, 500);
         }
         setIsNavigating(false);
       }, 100);

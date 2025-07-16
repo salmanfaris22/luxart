@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import starPng from "../../../assets/star.png";
 import UserIcon from "../../../assets/user.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -75,6 +75,49 @@ const testimonialsData = [
 ];
 
 function Testimonials() {
+  const swiperRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          // Re-initialize swiper when it comes into view
+          if (swiperRef.current && swiperRef.current.swiper) {
+            setTimeout(() => {
+              swiperRef.current.swiper.update();
+              swiperRef.current.swiper.slideTo(1, 0, false);
+            }, 100);
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const testimonialsSection = document.getElementById("testimonials");
+    if (testimonialsSection) {
+      observer.observe(testimonialsSection);
+    }
+
+    return () => {
+      if (testimonialsSection) {
+        observer.unobserve(testimonialsSection);
+      }
+    };
+  }, []);
+
+  // Force swiper update when component mounts or becomes visible
+  useEffect(() => {
+    if (isVisible && swiperRef.current && swiperRef.current.swiper) {
+      const timer = setTimeout(() => {
+        swiperRef.current.swiper.update();
+        swiperRef.current.swiper.slideTo(1, 0, false);
+      }, 200);
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible]);
+
   return (
     <section id="testimonials" className="testimonial-section">
       <h2 className="testimonial-title">
@@ -83,6 +126,7 @@ function Testimonials() {
 
       <div className="testimonial-carousel-wrapper">
         <Swiper
+          ref={swiperRef}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
@@ -90,6 +134,9 @@ function Testimonials() {
           slidesPerView={3}
           initialSlide={1}
           spaceBetween={30}
+          observer={true}
+          observeParents={true}
+          watchSlidesProgress={true}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -143,6 +190,13 @@ function Testimonials() {
                 modifier: 2,
               },
             },
+          }}
+          onSwiper={(swiper) => {
+            // Ensure proper initialization
+            setTimeout(() => {
+              swiper.update();
+              swiper.slideTo(1, 0, false);
+            }, 100);
           }}
         >
           {testimonialsData.map((item, index) => (

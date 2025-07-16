@@ -15,7 +15,7 @@ const floatingImages = [
   "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery17_uvdhgl.jpg",
   "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery14_onysop.jpg",
   "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery19_aaq3nb.jpg",
-  "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery20_qzzkfm.jpg",
+  // "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery20_qzzkfm.jpg",
 
   // img11,
   // img12,
