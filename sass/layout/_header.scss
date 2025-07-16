@@ -34,10 +34,19 @@
   }
 
   &__logo {
+    cursor: pointer;
+    z-index: 1000;
+    
+    a {
+      display: block;
+      text-decoration: none;
+    }
+    
     img {
       height: 70px;
       object-fit: contain;
       transition: height 0.3s ease;
+      pointer-events: auto;
 
       @include respond(bigDesktop) {
         height: 60px;
@@ -313,6 +322,11 @@
     margin: 0.5% auto;
     border-radius: 0;
 
+    &__logo {
+      z-index: 1001;
+      position: relative;
+    }
+
     &__links {
       width: 100vw;
       height: 100vh;
@@ -408,6 +422,11 @@
     width: 100%;
     margin: 0;
     border-radius: 0;
+
+    &__logo {
+      z-index: 1001;
+      position: relative;
+    }
 
     &__links {
       width: 100vw;

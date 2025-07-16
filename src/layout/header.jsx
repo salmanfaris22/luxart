@@ -35,7 +35,19 @@ const Header = () => {
       setTimeout(() => {
         const testimonialsSection = document.getElementById("testimonials");
         if (testimonialsSection) {
-          testimonialsSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset
+          const elementTop = testimonialsSection.offsetTop;
+          const scrollPosition = elementTop - navbarHeight - 20; // 20px extra padding
+          
+          window.scrollTo({ 
+            top: scrollPosition, 
+            behavior: "smooth" 
+          });
+          
           // Force swiper update after scrolling
           setTimeout(() => {
             const swiperElement = testimonialsSection.querySelector(".swiper");
@@ -53,7 +65,18 @@ const Header = () => {
       setTimeout(() => {
         const expertsSection = document.querySelector(".choose-expert");
         if (expertsSection) {
-          expertsSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset
+          const elementTop = expertsSection.offsetTop;
+          const scrollPosition = elementTop - navbarHeight - 20; // 20px extra padding
+          
+          window.scrollTo({ 
+            top: scrollPosition, 
+            behavior: "smooth" 
+          });
           window.history.replaceState({}, document.title);
         }
         setIsNavigating(false);
@@ -92,7 +115,19 @@ const Header = () => {
       setTimeout(() => {
         const testimonialsSection = document.getElementById("testimonials");
         if (testimonialsSection) {
-          testimonialsSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset
+          const elementTop = testimonialsSection.offsetTop;
+          const scrollPosition = elementTop - navbarHeight - 20; // 20px extra padding
+          
+          window.scrollTo({ 
+            top: scrollPosition, 
+            behavior: "smooth" 
+          });
+          
           // Force swiper update after scrolling
           setTimeout(() => {
             const swiperElement = testimonialsSection.querySelector(".swiper");
@@ -116,7 +151,18 @@ const Header = () => {
       setTimeout(() => {
         const expertsSection = document.querySelector(".choose-expert");
         if (expertsSection) {
-          expertsSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset
+          const elementTop = expertsSection.offsetTop;
+          const scrollPosition = elementTop - navbarHeight - 20; // 20px extra padding
+          
+          window.scrollTo({ 
+            top: scrollPosition, 
+            behavior: "smooth" 
+          });
         }
         setIsNavigating(false);
       }, 100);
@@ -144,11 +190,23 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const handleLogoClick = () => {
+    setMenuOpen(false);
+    
+    // If we're already on the home page, scroll to top
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // If we're on a different page, navigate to home
+      navigate("/");
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className={`navbar__logo${menuOpen ? " hide" : ""}`}>
-        <Link to="/">
-          <img src={logo} alt="Luxart Logo" />
+        <Link to="/" onClick={handleLogoClick}>
+          <img src={logo} alt="Luxart Logo" onClick={handleLogoClick} />
         </Link>
       </div>
       <div
