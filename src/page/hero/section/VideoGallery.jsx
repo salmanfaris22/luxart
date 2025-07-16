@@ -67,12 +67,12 @@ const videos = [
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.20_2_l345og.jpg",
     src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412797/i4qo7r4y2nuiafbnbzmg.mp4",
   },
-  {
-    id: 11,
-    thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414294/WhatsApp_Image_2025-06-20_at_15.40.20_3_kdfijl.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412797/i4qo7r4y2nuiafbnbzmg.mp4",
-  },
+  // {
+  //   id: 11,
+  //   thumbnail:
+  //     "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414294/WhatsApp_Image_2025-06-20_at_15.40.20_3_kdfijl.jpg",
+  //   src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412797/i4qo7r4y2nuiafbnbzmg.mp4",
+  // },
 ];
 
 const VideoGallery = () => {
