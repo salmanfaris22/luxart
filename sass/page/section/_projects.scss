@@ -139,21 +139,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    // @media (max-width: 768px) {
-    //   grid-template-columns: 1fr;
-    //   gap: 1.5rem;
-    // }
-
-    @media (min-width: 375px) and (max-width: 413px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: 0.75rem;
-      padding: 1rem 1rem 0rem 1rem;
-    }
-
-    @media (min-width: 414px) {
-      grid-template-columns: 1fr;
-      gap: 0.75rem;
-      padding: 1rem 2rem 0rem 2rem;
+      gap: 1.5rem;
     }
   }
 
@@ -456,11 +444,11 @@
         margin-top: 0px;
       }
     }
-    // &__grid {
-    //   grid-template-columns: 1fr !important;
-    //   gap: 0.75rem;
-    //   margin-bottom: 2rem;
-    // }
+    &__grid {
+      grid-template-columns: 1fr !important;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
     &__card--azure {
       height: 420px; // reverted back to original
       .projects__image {
@@ -511,7 +499,10 @@
         display: block;
       }
     }
-  
+    &__grid {
+      grid-template-columns: 1fr !important;
+      gap: 0.75rem;
+    }
     &__card--azure {
       height: 300px; // reverted back to original
       .projects__image {
@@ -521,7 +512,7 @@
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 262px !important; // increased and made consistent
+      height: 315px !important; // increased and made consistent
       .projects__image {
         max-height: 360px; // increased from 260px
       }
@@ -547,7 +538,7 @@
 // Small Phone
 @media (max-width: 400px) {
   .projects {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.1rem;
     &__header {
       .projects__title {
         font-size: 1.5rem;
