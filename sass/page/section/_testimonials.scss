@@ -8,7 +8,7 @@
   overflow: hidden;
 
   .swiper-3d {
-    perspective: 2000px !important;
+    perspective: 1000px !important;
   }
 
   .testimonial-title {
@@ -49,8 +49,7 @@
   }
 
   .testimonial-carousel-wrapper {
-    width: 100%;
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 4rem;
     position: relative;
@@ -59,10 +58,12 @@
     @include respond(smallPhone) {
       padding: 1rem 1rem 1rem 0rem;
       min-height: 300px;
+      width: 100%;
     }
     @include respond(phone) {
       padding: 1.5rem;
       min-height: 350px;
+      width: 100%;
     }
     @include respond(bigTablets) {
       padding: 1rem 0rem;

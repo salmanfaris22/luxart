@@ -27,7 +27,7 @@ const landing = () => {
   };
 
   return (
-    <section className="landing">
+    <section className="landing" id="home">
       <div className="landing__content">
         <div
           className="landing__title-wrapper"
