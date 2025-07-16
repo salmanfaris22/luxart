@@ -25,6 +25,36 @@ const Footer = () => {
     }
   };
 
+  const scrollToTestimonials = () => {
+    const testimonialsSection = document.getElementById("testimonials");
+    if (testimonialsSection) {
+      const windowHeight = window.innerHeight;
+      const sectionHeight = testimonialsSection.offsetHeight;
+      const offset = (windowHeight - sectionHeight) / 2;
+      const sectionTop = testimonialsSection.offsetTop;
+
+      window.scrollTo({
+        top: Math.max(0, sectionTop - offset),
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      const windowHeight = window.innerHeight;
+      const sectionHeight = projectsSection.offsetHeight;
+      const offset = (windowHeight - sectionHeight) / 2;
+      const sectionTop = projectsSection.offsetTop;
+
+      window.scrollTo({
+        top: Math.max(0, sectionTop - offset),
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleEnquireClick = () => {
     const phoneNumber = "+918075521186"; // Replace with your actual WhatsApp number
     const message = "Hello, I would like to enquire about your services."; // Customize your message
@@ -45,9 +75,35 @@ const Footer = () => {
     }
   };
 
+  const handleFooterTestimonialsClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      // Already on home, just scroll
+      scrollToTestimonials();
+    } else {
+      // Navigate to home and scroll after navigation
+      navigate("/", { state: { scrollTo: "testimonials" } });
+    }
+  };
+
+  const handleFooterProjectsClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      // Already on home, just scroll
+      scrollToProjects();
+    } else {
+      // Navigate to home and scroll after navigation
+      navigate("/", { state: { scrollTo: "projects" } });
+    }
+  };
+
   useEffect(() => {
     if (location.state && location.state.scrollTo === "services") {
       scrollToServices();
+    } else if (location.state && location.state.scrollTo === "testimonials") {
+      scrollToTestimonials();
+    } else if (location.state && location.state.scrollTo === "projects") {
+      scrollToProjects();
     }
   }, [location]);
 
@@ -125,12 +181,24 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link to="/about">About Us</Link>
               </li>
+
               <li>
                 <a href="#services" onClick={handleFooterServicesClick}>
                   Services
+                </a>
+              </li>
+              <li>
+                <a href="#testimonials" onClick={handleFooterTestimonialsClick}>
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#projects" onClick={handleFooterProjectsClick}>
+                  Projects
                 </a>
               </li>
             </ul>

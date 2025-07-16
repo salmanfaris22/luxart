@@ -50,7 +50,7 @@ const Header = () => {
           
           // Force swiper update after scrolling
           setTimeout(() => {
-            const swiperElement = testimonialsSection.querySelector('.swiper');
+            const swiperElement = testimonialsSection.querySelector(".swiper");
             if (swiperElement && swiperElement.swiper) {
               swiperElement.swiper.update();
               swiperElement.swiper.slideTo(1, 0, false);
@@ -77,6 +77,16 @@ const Header = () => {
             top: scrollPosition, 
             behavior: "smooth" 
           });
+          window.history.replaceState({}, document.title);
+        }
+        setIsNavigating(false);
+      }, 100);
+    } else if (location.state?.scrollTo === "services") {
+      setIsNavigating(true);
+      setTimeout(() => {
+        const servicesSection = document.querySelector("#services");
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: "smooth" });
           window.history.replaceState({}, document.title);
         }
         setIsNavigating(false);
@@ -120,7 +130,7 @@ const Header = () => {
           
           // Force swiper update after scrolling
           setTimeout(() => {
-            const swiperElement = testimonialsSection.querySelector('.swiper');
+            const swiperElement = testimonialsSection.querySelector(".swiper");
             if (swiperElement && swiperElement.swiper) {
               swiperElement.swiper.update();
               swiperElement.swiper.slideTo(1, 0, false);
@@ -153,6 +163,22 @@ const Header = () => {
             top: scrollPosition, 
             behavior: "smooth" 
           });
+        }
+        setIsNavigating(false);
+      }, 100);
+    }
+    setMenuOpen(false);
+  };
+
+  const scrollToServices = () => {
+    setIsNavigating(true);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "services" } });
+    } else {
+      setTimeout(() => {
+        const servicesSection = document.querySelector("#services");
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: "smooth" });
         }
         setIsNavigating(false);
       }, 100);
@@ -205,6 +231,24 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link
+            to="/about"
+            className={isActive("/about") ? "active" : ""}
+            onClick={handleLinkClick}
+          >
+            About Us
+          </Link>
+        </li>
+        <li>
+          <button
+            onClick={scrollToServices}
+            className={`navbar__link-button${isNavigating ? " loading" : ""}`}
+            disabled={isNavigating}
+          >
+            {isNavigating ? "Loading..." : "Services"}
+          </button>
+        </li>
+        <li>
           <button
             onClick={scrollToTestimonials}
             className={`navbar__link-button${isNavigating ? " loading" : ""}`}
@@ -221,15 +265,6 @@ const Header = () => {
           >
             {isNavigating ? "Loading..." : "Projects"}
           </button>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            className={isActive("/about") ? "active" : ""}
-            onClick={handleLinkClick}
-          >
-            About Us
-          </Link>
         </li>
       </ul>
       <div className="navbar__cta">

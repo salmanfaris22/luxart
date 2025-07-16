@@ -75,7 +75,7 @@
     }
 
     .testimonial-swiper {
-      width: 100%;
+      // width: 100%;
       padding: 0rem 0rem 3rem 0rem;
       overflow: visible;
 
@@ -90,7 +90,7 @@
       }
       @include respond(bigTablets) {
         padding: 0 0 2.5rem 0; // Slightly more padding for larger screens
-        max-width: 990px;      // Wider for big tablets
+        max-width: 990px; // Wider for big tablets
         margin: 0 auto;
       }
 
@@ -101,7 +101,7 @@
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           opacity: 0.5;
           transform: scale(0.85);
-          
+
           @include respond(bigTablets) {
             height: 260px;
           }
@@ -118,7 +118,7 @@
             @include respond(smallPhone) {
               height: 160px;
             }
-            
+
             @include respond(bigTablets) {
               height: 260px;
               // width: 320px;
@@ -133,7 +133,7 @@
             opacity: 0.7;
             transform: scale(0.9);
             z-index: 1;
-            
+
             @include respond(bigTablets) {
               height: 230px;
               // width: 380px;
@@ -201,7 +201,7 @@
       padding: 1.2rem;
       max-width: 320px;
     }
-    
+
     @include respond(bigTablets) {
       padding: 1rem;
       max-width: 380px;
@@ -219,7 +219,7 @@
       @include respond(smallPhone) {
         margin-bottom: 0.8rem;
       }
-      
+
       @include respond(bigTablets) {
         margin-bottom: 1.2rem;
       }
@@ -244,7 +244,7 @@
             width: 40px;
             height: 40px;
           }
-          
+
           @include respond(bigTablets) {
             width: 45px;
             height: 45px;
@@ -259,7 +259,7 @@
           @include respond(phone) {
             font-size: 0.85rem;
           }
-          
+
           @include respond(bigTablets) {
             font-size: 0.9rem;
           }
@@ -274,7 +274,7 @@
           @include respond(phone) {
             font-size: 0.75rem;
           }
-          
+
           @include respond(bigTablets) {
             font-size: 0.8rem;
           }
@@ -296,7 +296,7 @@
             width: 14px;
             height: 14px;
           }
-          
+
           @include respond(bigTablets) {
             width: 15px;
             height: 15px;
@@ -326,7 +326,7 @@
         line-height: 1.5;
         -webkit-line-clamp: 5;
       }
-      
+
       @include respond(bigTablets) {
         font-size: 0.95rem;
         line-height: 1.5;
@@ -451,11 +451,17 @@
 @include respond(tablets) {
   .testimonial-swiper {
     .swiper-slide {
-      .testimonial-card { height: 150px; } // was 220px
-      &.swiper-slide-active .testimonial-card { height: 180px; } // was 270px
+      .testimonial-card {
+        height: 150px;
+      } // was 220px
+      &.swiper-slide-active .testimonial-card {
+        height: 180px;
+      } // was 270px
       &.swiper-slide-prev,
       &.swiper-slide-next {
-        .testimonial-card { height: 120px; } // was 180px
+        .testimonial-card {
+          height: 120px;
+        } // was 180px
       }
     }
   }
