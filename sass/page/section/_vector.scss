@@ -42,6 +42,12 @@
       black calc(100% - 500px),
       transparent 100%
     );
+
+    // Remove mask on small screens
+    @media (max-width: 600px) {
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
   }
 
   &__slider {

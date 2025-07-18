@@ -27,7 +27,7 @@ const servicesData = [
   },
   {
     title: "Planning",
-    description: "Strategic development and regulation of your project.",
+    description: "Strategic development and regulation your project.",
     image:
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254114/image5_vmjdzs.png",
   },
