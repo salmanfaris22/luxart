@@ -86,7 +86,22 @@ const Header = () => {
       setTimeout(() => {
         const servicesSection = document.querySelector("#services");
         if (servicesSection) {
-          servicesSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset - scroll to upper eighth of services section
+          const elementTop = servicesSection.offsetTop;
+          const elementHeight = servicesSection.offsetHeight;
+          const windowHeight = window.innerHeight;
+          
+          // Scroll to show services section in the upper eighth of the viewport
+          const scrollPosition = elementTop - navbarHeight - (windowHeight / 8) + (elementHeight / 8);
+          
+          window.scrollTo({ 
+            top: Math.max(0, scrollPosition), 
+            behavior: "smooth" 
+          });
           window.history.replaceState({}, document.title);
         }
         setIsNavigating(false);
@@ -178,7 +193,22 @@ const Header = () => {
       setTimeout(() => {
         const servicesSection = document.querySelector("#services");
         if (servicesSection) {
-          servicesSection.scrollIntoView({ behavior: "smooth" });
+          // Get navbar height for proper offset
+          const navbar = document.querySelector('.navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 80;
+          
+          // Calculate scroll position with offset - scroll to upper eighth of services section
+          const elementTop = servicesSection.offsetTop;
+          const elementHeight = servicesSection.offsetHeight;
+          const windowHeight = window.innerHeight;
+          
+          // Scroll to show services section in the upper eighth of the viewport
+          const scrollPosition = elementTop - navbarHeight - (windowHeight / 10) + (elementHeight / 10);
+          
+          window.scrollTo({ 
+            top: Math.max(0, scrollPosition), 
+            behavior: "smooth" 
+          });
         }
         setIsNavigating(false);
       }, 100);

@@ -209,23 +209,28 @@
   }
 
   @include respond(tablets) {
+    position: sticky;
+    top: 0;
+    
     &__links {
       position: fixed;
-      top: 0;
-      left: -18px;
+      // top: 0;
+      // left: 0;
+      // right: 0;
       background: black;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 92vw;
-      height: 90vh;
+      width: 100vw;
+      height: 100vh;
       padding: 2rem;
       gap: 2rem;
       display: none;
-      z-index: 9998;
+      z-index: 999999;
 
       &.open {
         display: flex;
+        z-index: 999999;
       }
 
       li {
@@ -270,14 +275,14 @@
     }
 
     &__hamburger {
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
       width: 32px;
       height: 24px;
-      z-index: 9999;
+      z-index: 999999;
       position: relative;
       transition: all 0.3s ease;
       padding: 0;
@@ -705,28 +710,30 @@
     background: black;
     width: 95%;
     margin: 1% auto;
-    // position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 999999;
 
     &__links {
       position: fixed;
-      top: 0;
-      left: -18px;
+      // top: 0;
+      // left: 0;
+      // right: 0;
       background: black;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 92vw;
-      height: 90vh;
-      padding: 2rem;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
       gap: 2rem;
       display: none;
-      z-index: 9998;
+      z-index: 999999;
 
       &.open {
         display: flex;
         background: black;
+        z-index: 999999;
       }
 
       li {
@@ -816,6 +823,7 @@
         transition: all 0.3s ease;
         display: block;
         box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        transform-origin: center;
       }
 
       &.open {

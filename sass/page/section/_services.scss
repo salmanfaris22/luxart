@@ -115,19 +115,28 @@
 
 // Tablet
 @media (max-width: 900px) {
+  .services {
+    z-index: 1 !important;
+  }
+  .services__wrapper {
+    z-index: 1 !important;
+  }
   .services__card {
     width: 200px;
     height: 300px;
+    z-index: 1 !important;
   }
   .services__title {
     font-size: 1.1rem;
     margin-bottom: -1.2rem;
+    z-index: 2 !important;
   }
   .services__desc {
     font-size: 0.85rem;
   }
   .services__content {
     padding: 1rem;
+    z-index: 1 !important;
   }
 }
 
