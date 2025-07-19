@@ -43,10 +43,9 @@ const Footer = () => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById("projects");
     if (projectsSection) {
-      const windowHeight = window.innerHeight;
-      const sectionHeight = projectsSection.offsetHeight;
-      const offset = (windowHeight - sectionHeight) / 2;
       const sectionTop = projectsSection.offsetTop;
+      const navbarHeight = 80; // Approximate navbar height
+      const offset = navbarHeight + 20; // Add some padding
 
       window.scrollTo({
         top: Math.max(0, sectionTop - offset),

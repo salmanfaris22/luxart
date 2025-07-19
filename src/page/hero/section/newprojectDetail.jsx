@@ -23,19 +23,27 @@ export default function NewProjectDetail() {
   // Filter only imthiyas projects
   const project = projectData.find((p) => p.id === projectId);
 
-  // Dynamically filter projects by the current project's projectBy
-  const filteredProjects = projectData.filter(
-    (p) => p.projectBy === project?.projectBy
-  );
+  // Main Luxart projects in the desired order
+  const mainProjectIds = [
+    "cheekkilode",
+    "pattambi-heights", 
+    "pavangad",
+    "kondotty",
+    "kalamassery"
+  ];
 
-  const currentIndex = filteredProjects.findIndex((p) => p.id === projectId);
+  // Filter main projects in the specified order
+  const mainProjects = mainProjectIds.map(id => 
+    projectData.find(p => p.id === id)
+  ).filter(Boolean);
+
+  const currentIndex = mainProjects.findIndex((p) => p.id === projectId);
   const previousIndex =
-    currentIndex > 0 ? currentIndex - 1 : filteredProjects.length - 1;
+    currentIndex > 0 ? currentIndex - 1 : mainProjects.length - 1;
   const nextIndex =
-    currentIndex < filteredProjects.length - 1 ? currentIndex + 1 : 0;
-  const previousProject = filteredProjects[previousIndex];
-  const nextProject = filteredProjects[nextIndex];
-   console.log("imthiyasProjects", filteredProjects);
+    currentIndex < mainProjects.length - 1 ? currentIndex + 1 : 0;
+  const previousProject = mainProjects[previousIndex];
+  const nextProject = mainProjects[nextIndex];
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
