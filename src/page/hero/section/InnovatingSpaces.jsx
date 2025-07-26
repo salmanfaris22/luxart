@@ -49,7 +49,7 @@ const InnovatingSpaces = () => {
           className="innovating__image innovating__image--first"
           style={{
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
-            backgroundImage: `url(${"https://res.cloudinary.com/dzuqczvb7/image/upload/v1751283590/imageOne_aau0oq.png"})`,
+            backgroundImage: `url(${"https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-vision/lux-vision1.png"})`,
           }}
         ></div>
 
@@ -57,7 +57,7 @@ const InnovatingSpaces = () => {
           className="innovating__image innovating__image--second"
           style={{
             clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
-            backgroundImage: `url(${"https://res.cloudinary.com/dzuqczvb7/image/upload/v1751283594/imageTwo_ykij1t.png"})`,
+            backgroundImage: `url(${"https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-vision/lux-vision2.png"})`,
           }}
         ></div>
 

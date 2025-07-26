@@ -157,14 +157,14 @@ The location provides excellent connectivity to schools, hospitals, shopping cen
     location: "Wayanad, Wayanad",
     area: "15650  sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_xjzlsg.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_b_ent079.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/4_mnlmba.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/Chain_Mist_C_mq7uxs.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/6_koqbba.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826616/2_juvkdt.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/Chain_Mist_D_doicvs.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826617/8_vnxm6a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd1.jpg",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd2.jpg",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd3.jpg",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd4.jpg",//4
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd5.jpg",//5
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd6.jpg",//6
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd7.jpg",//7
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-wynd8.jpg",//8
     ],
     pdfLink: null,
     summary:
@@ -189,11 +189,11 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     location: "Kozhikode, Kerala",
     area: "13000  sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363590/WaqfBoardC_mi32vd.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827726/3_drwdms.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363589/WaqfBoardB_v6liag.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827727/1_i1dt5u.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363589/WaqfBoardA_afk9ip.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-kzkd1.jpg",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-kzkd2.jpg",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-kzkd3.jpgs",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-kzkd4.jpg",//4
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-kzkd5.jpg",//5
     ],
     pdfLink: null,
     summary:
@@ -218,9 +218,9 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Poonoor, Kozhikode",
     area: "5600 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446692/1-25-scaled_oolwpg.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446688/1-31-scaled_nsicpi.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446688/1-14-1-scaled_ewe4og.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath2.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath3.jpg",
     ],
     pdfLink: null,
     summary:
@@ -242,12 +242,12 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Pathimangalam, Kozhikode",
     area: "4275 sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363563/PathimangalamcltA_awfvht.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/5_jprbld.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltC_qxnhgk.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/6_qb5itu.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltD_vnkokr.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltB_dzomyg.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path1.jpg",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path2.jpg",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path3.jpg",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path4.jpg",//4
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path5.jpg",//5
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-path6.jpg",//6
     ],
     pdfLink: null,
     summary:
@@ -272,8 +272,8 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     location: "Meppayur, Kozhikode",
     area: "4500 sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Baith_B_wz6ilq.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Baith_hymakh.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-baith1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-baith2.jpg",
     ],
     pdfLink: null,
     summary:
@@ -298,8 +298,8 @@ The location in Neriamangalam provides excellent connectivity to Ernakulam's maj
     location: "Kondotty, Malappuram",
     area: "5000 sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363593/TropicalB_iup5o2.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363592/TropicalA_dunhlu.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-trophical1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tropical2.jpg",
     ],
     pdfLink: null,
     summary:
@@ -324,9 +324,9 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     location: "Poonoor, Kozhikode",
     area: "6950  sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446058/1-9_iijvin.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446061/12-1_yes6uf.png",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446068/22_bvqzev.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-inaayath1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-inaayath2.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-inaayath3.png",
     ],
     pdfLink: null,
     summary:
@@ -348,8 +348,8 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     location: "Pantheeramkavu, Kozhikode",
     area: "4600 sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363563/ExcentricBoxB_qtnotn.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/ExcentricBoxA_otyomj.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-eccentric1.jpg",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-eccentric2.jpg",//2
     ],
     pdfLink: null,
     summary:
@@ -374,8 +374,8 @@ The location in Mukkam provides excellent connectivity to Kozhikode's major faci
     location: "Naduvannur, Kozhikode",
     area: "3000 sq.ft",
     images: [
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363565/TraquilityHa_zas3wg.jpg",
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363588/TraquilityHB_msbq6l.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tranquility1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tranquility2.jpg",
     ],
     pdfLink: null,
     summary:
@@ -400,9 +400,9 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     location: "Poonoor, Kozhikode",
     area: "4900 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442115/1-59-1_dmf8cx.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442114/1-5-31_rudjpe.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442114/1-53-1_truv5w.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tacito1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tacito2.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-tacito3.jpg",
     ],
     pdfLink: null,
     summary:
@@ -424,9 +424,9 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     location: "Poonoor, Kozhikode",
     area: "4875 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441868/1-11-1_wvz3ap.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441865/1-45-3-scaled_tmiwzm.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441865/1-9-2_abtjlj.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-qasr1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-qasr2.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-qasr3.jpg",
     ],
     pdfLink: null,
     summary:

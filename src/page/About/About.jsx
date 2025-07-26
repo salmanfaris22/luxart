@@ -148,7 +148,7 @@ export default function About() {
             <div className="aboutPage-container__Content__bottom__right">
               <img
                 src={
-                  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750425947/dp_3_lctcqt.jpg"
+                  "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-about/lux-about2.jpg"
                 }
                 alt="Chairman"
               />
@@ -212,7 +212,7 @@ export default function About() {
             </div>
             <div className="aboutPage-container__VisionGoal__Container__Right">
               <img
-                src="https://res.cloudinary.com/dzuqczvb7/image/upload/v1748521313/WhatsApp_Image_2025-05-29_at_17.48.39_2_xqlzxd.jpg"
+                src="https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-about/lux-about4.jpg"
                 alt="vision"
               />
             </div>

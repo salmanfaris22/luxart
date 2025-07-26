@@ -5,61 +5,61 @@ const servicesData = [
     title: "3D Design",
     description: "Creating visual representations of your building ideas.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image1_nsppay.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service1.png",
   },
   {
     title: "Modeling",
     description: "Detailed and realistic modeling for visualization.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254111/image2_drbwz5.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service2.png",
   },
   {
     title: "Construction",
     description: "Reliable and structured execution of architectural plans.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image3_kbldzd.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service3.png",
   },
   {
     title: "Interior Design",
     description: "Elegant and functional interior space planning.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image4_pojwyd.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service4.png",
   },
   {
     title: "Planning",
     description: "Strategic development and regulation your project.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254114/image5_vmjdzs.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service5.png",
   },
   {
     title: "Exterior Design",
     description: "Appealing and weather-resistant outer aesthetics.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image1_nsppay.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service6.png",
   },
   {
     title: "Renovation",
     description: "Upgrading old spaces with modern solutions.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254111/image2_drbwz5.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service7.png",
   },
   {
     title: "Landscape Design",
     description: "Organizing outdoor areas creatively.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image3_kbldzd.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service8.png",
   },
   {
     title: "Consultation",
     description: "Expert advice for design and execution.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image4_pojwyd.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service9.png",
   },
   {
     title: "Budget Planning",
     description: "Estimate and manage costs efficiently.",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254114/image5_vmjdzs.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-services/lux-service10.png",
   },
 ];
 

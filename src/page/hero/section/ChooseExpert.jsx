@@ -7,7 +7,7 @@ const engineers = [
     name: "Shabeer A.M., Saleel Kumar R.",
     title: "Founders of Shabeer Saleel Associates",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751708084/DSC03534_1_ylb1eb.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-engineer/lux-engineer1.jpg",
     projectBy: "shabeer",
     hasProjects: false,
   },
@@ -16,7 +16,7 @@ const engineers = [
     name: "Barun Patro, Sekar Dhandapani, Shiju Pareed",
     title: "Amar Architecture and Designs Pvt Ltd",
     image:
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751447351/S24_0602_1_jiiq4h.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-engineer/lux-engineer2.jpg",
     projectBy: "shiju",
     hasProjects: true,
   },
@@ -25,7 +25,7 @@ const engineers = [
     name: "P C Rasheed",
     title: "Founder of P C Rasheed and Associates, TSSA Luxart Builders",
     image:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750836806/32456_aytsev.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-engineer/lux-engineer3.jpg",
     projectBy: "rasheed",
     hasProjects: true,
   },
@@ -34,7 +34,7 @@ const engineers = [
     name: "Imthiyaz Ahammed",
     title: "Founder of Ingrid Architects",
     image:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750835956/IMG_8524_3_gsktvp.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-engineer/lux-engineer4.jpg",
     projectBy: "imthiyas",
     hasProjects: true,
   },

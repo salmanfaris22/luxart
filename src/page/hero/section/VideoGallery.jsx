@@ -14,65 +14,60 @@ const videos = [
   {
     id: 1,
     thumbnail: thumb1,
-    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338883/one_nlz3ds.mp4",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video1.mp4",
   },
   {
     id: 2,
     thumbnail: thumb2,
-    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338884/two_w4zgwv.mp4",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video2.mp4",
   },
   {
     id: 3,
     thumbnail: thumb3,
-    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338898/three_jpcqut.mp4",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video3.mp4",
   },
   {
     id: 4,
     thumbnail: thumb4,
-    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338884/four_exrcg9.mp4",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video4.mp4",
   },
   {
     id: 5,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.38.42_lnhn5w.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412787/d83znrrygjd7jngtahv3.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb5.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video5.mp4",
   },
   {
     id: 6,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.20_1_u48sgi.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412788/doxw5m3nifo64yteqplk.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb6.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video6.mp4",
   },
   {
     id: 7,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.20_s0ejj2.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412789/ksrhzjgnaf6ce5sq7rgv.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb7.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video7.mp4",
   },
   {
     id: 8,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.19_1_fjhims.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412789/epwdgfabt6zp4gduq4a4.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb8.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video8.mp4",
   },
   {
     id: 9,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.19_oo18no.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412790/tx4auloivophk9tgmej7.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb9.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video9.mp4",
   },
   {
     id: 10,
     thumbnail:
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414295/WhatsApp_Image_2025-06-20_at_15.40.20_2_l345og.jpg",
-    src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412797/i4qo7r4y2nuiafbnbzmg.mp4",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb10.jpg",
+    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video10.mp4",
   },
-  // {
-  //   id: 11,
-  //   thumbnail:
-  //     "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750414294/WhatsApp_Image_2025-06-20_at_15.40.20_3_kdfijl.jpg",
-  //   src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1750412797/i4qo7r4y2nuiafbnbzmg.mp4",
-  // },
+ 
 ];
 
 const VideoGallery = () => {
