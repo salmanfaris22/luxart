@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { MdArrowForward } from "react-icons/md";
 
 const engineers = [
   {
@@ -84,19 +85,33 @@ const ChooseExpert = () => {
             onMouseEnter={() => setHovered(engineer.id)}
             onMouseLeave={() => setHovered(null)}
           >
-            <img
-              src={engineer.image}
-              alt={engineer.name}
-              className="expert-card__image"
-            />
-            {hovered === engineer.id && (
-              <div
-                className="expert-card__hover-overlay"
-                style={{ left: position.x, top: position.y }}
-              >
-                <span>View</span>
-              </div>
-            )}
+            <div className="expert-card__image-container">
+              <img
+                src={engineer.image}
+                alt={engineer.name}
+                className="expert-card__image"
+              />
+              {engineer.hasProjects && (
+                <button
+                  className="expert-card__projects-badge"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCardClick(engineer);
+                  }}
+                >
+                  <span className="badge-text">View Projects</span>
+                  <MdArrowForward className="badge-icon" />
+                </button>
+              )}
+              {hovered === engineer.id && (
+                <div
+                  className="expert-card__hover-overlay"
+                  style={{ left: position.x, top: position.y }}
+                >
+                  <span>View</span>
+                </div>
+              )}
+            </div>
             <div className="expert-card__info">
               <div className="expert-card__meta"></div>
               <h3 className="expert-card__name">{engineer.name}</h3>
