@@ -84,9 +84,12 @@ const ChooseExpert = () => {
     });
   };
 
-  // Auto-scroll functionality
+  // Auto-scroll functionality - only for desktop/tablet
   useEffect(() => {
-    if (isAutoScrolling && cardsContainerRef.current) {
+    // Check if screen width is larger than phone size (768px)
+    const isDesktopOrTablet = window.innerWidth > 768;
+    
+    if (isAutoScrolling && cardsContainerRef.current && isDesktopOrTablet) {
       autoScrollIntervalRef.current = setInterval(() => {
         if (cardsContainerRef.current) {
           const container = cardsContainerRef.current;
@@ -152,7 +155,8 @@ const ChooseExpert = () => {
         way.
       </p>
 
-      <div className="choose-expert__container">
+      {/* Desktop/Tablet Layout with Navigation */}
+      <div className="choose-expert__container choose-expert__container--desktop">
         <div
           className="swiper-button-prev-custom"
           onClick={handlePrevClick}
@@ -251,6 +255,53 @@ const ChooseExpert = () => {
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </div>
+      </div>
+
+      {/* Mobile Layout - One Engineer per Row */}
+      <div className="choose-expert__container choose-expert__container--mobile">
+        {engineers.map((engineer) => (
+          <div
+            key={engineer.id}
+            className="expert-card expert-card--mobile"
+            onClick={() => handleCardClick(engineer)}
+            onMouseMove={handleMouseMove}
+            onMouseEnter={() => setHovered(engineer.id)}
+            onMouseLeave={() => setHovered(null)}
+          >
+            <div className="expert-card__image-container">
+              <img
+                src={engineer.image}
+                alt={engineer.name}
+                className="expert-card__image"
+              />
+              {engineer.hasProjects && (
+                <button
+                  className="expert-card__projects-badge"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCardClick(engineer);
+                  }}
+                >
+                  <span className="badge-text">View Projects</span>
+                  <MdArrowForward className="badge-icon" />
+                </button>
+              )}
+              {hovered === engineer.id && (
+                <div
+                  className="expert-card__hover-overlay"
+                  style={{ left: position.x, top: position.y }}
+                >
+                  <span>View</span>
+                </div>
+              )}
+            </div>
+            <div className="expert-card__info">
+              <div className="expert-card__meta"></div>
+              <h3 className="expert-card__name">{engineer.name}</h3>
+              <p className="expert-card__role">{engineer.title}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

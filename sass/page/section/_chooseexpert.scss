@@ -14,7 +14,11 @@
   }
 
   @include respond(phone) {
-    padding: 0px 30px 40px 30px;
+    padding: 0px 20px 50px 20px;
+  }
+
+  @include respond(smallPhone) {
+    padding: 0px 20px 50px 20px;
   }
 
   &__title {
@@ -127,6 +131,35 @@
     @include respond(phone) {
       gap: 1rem;
     }
+
+    // Desktop/Tablet specific styles
+    &--desktop {
+      @include respond(phone) {
+        display: none;
+      }
+      @include respond(smallPhone) {
+        display: none;
+      }
+    }
+
+    // Mobile specific styles
+    &--mobile {
+      display: none;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 100%;
+      padding: 0 0.5rem;
+
+      @include respond(phone) {
+        display: flex;
+        padding: 0 0.3rem;
+      }
+      @include respond(smallPhone) {
+        display: flex;
+        gap: 1rem;
+        padding: 0 0.2rem;
+      }
+    }
   }
 
   &__cards {
@@ -184,6 +217,104 @@
     min-width: 200px;
     max-width: 220px;
     height: 400px;
+  }
+
+  // Mobile specific styles
+  &--mobile {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 500px;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    .expert-card__image-container {
+      width: 100%;
+      height: 400px;
+      flex-shrink: 0;
+    }
+
+    .expert-card__info {
+      flex: 1;
+      padding: 0 0 0 1rem;
+      height: auto;
+      justify-content: flex-start;
+    }
+
+    .expert-card__name {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .expert-card__role {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .expert-card__projects-badge {
+      position: absolute;
+      bottom: 0.8rem;
+      left: 0.8rem;
+      margin-top: 0;
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+
+    @include respond(phone) {
+      height: auto !important;
+      min-height: 450px;
+      padding: 0.8rem;
+      gap: 0.4rem;
+      flex-direction: column;
+
+      .expert-card__image-container {
+        width: 100%;
+        height: 360px;
+      }
+
+      .expert-card__info {
+        padding: 1rem 0.8rem;
+      }
+
+      .expert-card__projects-badge {
+        bottom: 0.6rem;
+        left: 0.6rem;
+      }
+    }
+
+    @include respond(smallPhone) {
+      height: auto !important;
+      min-height: 400px;
+      padding: 0.6rem;
+      gap: 0.3rem;
+      flex-direction: column;
+
+      .expert-card__image-container {
+        width: 100%;
+        height: 320px;
+      }
+
+      .expert-card__info {
+        padding: 1rem 0.6rem;
+      }
+
+      .expert-card__projects-badge {
+        bottom: 0.5rem;
+        left: 0.5rem;
+      }
+
+      .expert-card__name {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .expert-card__role {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   &:hover {
@@ -418,8 +549,10 @@
   }
 
   @include respond(phone) {
-    width: 30px;
-    height: 30px;
+    display: none;
+  }
+  @include respond(smallPhone) {
+    display: none;
   }
 }
 
