@@ -23,27 +23,36 @@ export default function NewProjectDetail() {
   // Filter only imthiyas projects
   const project = projectData.find((p) => p.id === projectId);
 
-  // Main Luxart projects in the desired order
+  // Build navigation list based on selected architect (fallback to main list)
   const mainProjectIds = [
     "cheekkilode",
-    "pattambi-heights", 
+    "pattambi-heights",
     "pavangad",
     "kondotty",
-    "kalamassery"
+    "kalamassery",
   ];
 
-  // Filter main projects in the specified order
-  const mainProjects = mainProjectIds.map(id => 
-    projectData.find(p => p.id === id)
-  ).filter(Boolean);
+  const selectedArchitect =
+    typeof window !== "undefined"
+      ? localStorage.getItem("selectedArchitect")
+      : null;
 
-  const currentIndex = mainProjects.findIndex((p) => p.id === projectId);
+  const architectKey = selectedArchitect || project?.projectBy || null;
+
+  // If we have an architectKey, show only those projects; otherwise show main list
+  const navigationProjects = architectKey
+    ? projectData.filter((p) => p.projectBy === architectKey)
+    : mainProjectIds
+        .map((id) => projectData.find((p) => p.id === id))
+        .filter(Boolean);
+
+  const currentIndex = navigationProjects.findIndex((p) => p.id === projectId);
   const previousIndex =
-    currentIndex > 0 ? currentIndex - 1 : mainProjects.length - 1;
+    currentIndex > 0 ? currentIndex - 1 : navigationProjects.length - 1;
   const nextIndex =
-    currentIndex < mainProjects.length - 1 ? currentIndex + 1 : 0;
-  const previousProject = mainProjects[previousIndex];
-  const nextProject = mainProjects[nextIndex];
+    currentIndex < navigationProjects.length - 1 ? currentIndex + 1 : 0;
+  const previousProject = navigationProjects[previousIndex];
+  const nextProject = navigationProjects[nextIndex];
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });

@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { MdArrowForward } from "react-icons/md";
-import architect2 from "../../../assets/architect2.jpg";
-import architect5 from "../../../assets/architect5.webp";
 
 const engineers = [
   {
@@ -12,7 +10,7 @@ const engineers = [
     image:
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-engineer/lux-engineer1.jpg",
     projectBy: "shabeer",
-    hasProjects: false,
+    hasProjects: true,
   },
   {
     id: 2,
@@ -45,7 +43,7 @@ const engineers = [
     id: 5,
     name: "Rashiq Muhamad Ali",
     title: "Founder of RqMA Architecture + Design",
-    image: architect2,
+    image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/architect2.jpg",
     projectBy: "rashiq",
     hasProjects: false,
   },
@@ -53,9 +51,9 @@ const engineers = [
     id: 6,
     name: "Abdulla Vasif",
     title: "CEO of Concetto Design Co",
-    image: architect5,
+    image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/architect5.webp",
     projectBy: "abdulla",
-    hasProjects: false,
+    hasProjects: true,
   },
 ];
 

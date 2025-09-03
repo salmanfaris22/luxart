@@ -1,5 +1,11 @@
 import img1 from "../../../assets/building1.jpg";
 import kalamassery from "../../../assets/kalamassery.pdf";
+import abd1 from "../../../assets/image1.png";
+import abd2 from "../../../assets/image2.png";
+import abd3 from "../../../assets/image3.png";
+import abd4 from "../../../assets/image4.png";
+import abd5 from "../../../assets/image5.png";
+import abd6 from "../../../assets/oneImg.jpeg";
 
 const projectData = [
   {
@@ -211,29 +217,235 @@ The location in Kozhikode provides excellent connectivity to major government in
     consultant: "P C Rasheed",
   },
   {
-    id: "hayath-residence",
-    projectBy: "shiju",
-    title: "Hayath Residence",
-    experience: "12 years experience",
-    location: "Poonoor, Kozhikode",
-    area: "5600 sq.ft",
+    id: "muthuthala-residence",
+    projectBy: "shabeer",
+    title: "Residence at Muthuthala",
+    experience: "10 years experience",
+    location: "Muthuthala",
+    area: "5135 sq.ft",
     images: [
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath1.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath2.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/lux-hayath3.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p1a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p1b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p1c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p1d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p1f.jpg"
     ],
     pdfLink: null,
     summary:
-      "The central concept of the project was to create a house with modern outlook while celebrating traditional architecture features.The massing had a parts-to-whole approach. Clusters of varying volumes arranged carefully to create a harmonious layout. The design further introduces voids that brings a piece of nature into the domestic realm. The building sits heavily on the site with the external wall creating a fort-like structure enclosing an eclectic world inside.The building is two-storey high with a centralized plan, being the dining area that merges the public spaces in the front and private rooms at the rear. While the design aid in smooth circulation, there are hidden intertwined paths connecting the spaces giving the residents privacy progressing through the house. The material palette includes American Walnut Veneer and Burberry Beige Italian Marble completed with brass accessories. Floor to ceiling windows enriches the soft tone of the interiors, featuring the view to lush green surroundings. Skylight channels the natural light highlighting the natural warmth of wood in the interior. The overall design is a manifestation of elegant spaces and sophisticated use of materials.",
-    description: `The central concept of the project was to create a house with modern outlook while celebrating traditional architecture features.The massing had a parts-to-whole approach. Clusters of varying volumes arranged carefully to create a harmonious layout. The design further introduces voids that brings a piece of nature into the domestic realm. The building sits heavily on the site with the external wall creating a fort-like structure enclosing an eclectic world inside.The building is two-storey high with a centralized plan, being the dining area that merges the public spaces in the front and private rooms at the rear. While the design aid in smooth circulation, there are hidden intertwined paths connecting the spaces giving the residents privacy progressing through the house. The material palette includes American Walnut Veneer and Burberry Beige Italian Marble completed with brass accessories. Floor to ceiling windows enriches the soft tone of the interiors, featuring the view to lush green surroundings. Skylight channels the natural light highlighting the natural warmth of wood in the interior. The overall design is a manifestation of elegant spaces and sophisticated use of materials.`,
-    client: "Hayath",
-    architect: null,
+      "A modern luxury villa designed by Shabeer Saleel Associates, featuring elegant interiors, natural light, and premium materials.",
+    description: `The client for the Residence at Muthuthala envisioned a luxurious, serene home nestled in nature, away from the bustling town. SSA Architects was tasked with creating a residence that combined Kerala heritage with modern design elements, providing all the luxury and modern amenities while embracing the lush greenery surrounding the property. The residence features a slanting roof, high-class woodwork interiors, a well for water needs, a beautifully designed courtyard seating area, and a gated, lit pathway for an inviting ambiance, ensuring a perfect balance between tradition and modernity.`,
+    client: "Mr. Shoukath ali",
+    architect: "Shabeer Saleel Associates",
     projectType: "Residential Project",
     designTeam: null,
     contractor: null,
     consultant: null,
-    completed: "2019",
   },
+
+
+
+
+
+  {
+    id: "pookottur-residence",
+    projectBy: "shabeer",
+    title: "Residence at Pookottur",
+    experience: "11 years experience",
+    location: "Pookottur, Malappuram",
+    area: "3851 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p2a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p2b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p2c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p2d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/saleel-p2e.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A contemporary family residence emphasizing natural light, cross ventilation, and warm material palette.",
+    description: `The client for the Residence at Pookottur wanted a luxurious home that reflects a blend of traditional and modern aesthetics. The house features elegant slant roofs, rich wooden interiors, and large glass windows that allow natural light to flood in. The surrounding area is meticulously landscaped with tiled pathways and curated greenery, enhancing the ambiance. With spacious rooms outfitted with modern amenities, the residence offers comfort, style, and a seamless connection with nature, making it an ideal family haven.`,
+    client: "Mr. Basher",
+    architect: "Shabeer Saleel Associates",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+
+  //1 - Casa Encanto
+  {
+    id: "casa-encanto",
+    projectBy: "abdulla",
+    title: "Casa Encanto",
+    experience: "8 years experience",
+    location: " Mannarkkad, Kerala",
+    area: "22,000 sq.ft",
+    images: [
+      
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2e.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2f.jpg"   
+    ],
+    pdfLink: null,
+    summary:
+      "A courtyard-led home that anchors family life around light, air, and greens.",
+    description: `A Luxurious colonial jewel. A regal canvas of ivory and gardens in whispers. Elegance dances on each column, where past and luxury waltz, a poetry of home.Outside, the colonial grandeur is a symphony of white pillars, lush gardens, and regal symmetry. The facade whispers of timeless elegance, a majestic dance with nature's grace.Opulent colonial interiors unfold with intricate moldings, chandeliers, and sumptuous furnishings. Each room tells a tale of refined taste, blending history with modern comfort in a living masterpiece.`,
+    client: "Mr. Hussain",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //2 - Hadaf
+  {
+    id: "hadaf",
+    projectBy: "abdulla",
+    title: "Hadaf",
+    experience: "9 years experience",
+    location: "Eranjikkal, Kerala",
+    area: "4500 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/project5.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p5b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p5c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p5d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p5e.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A coastal home balancing openness to views with protection from salt and sun.",
+    description: `Sleek with glass windows, the contemporary house harmonizes with lush landscaping, blending modernity with nature for a luminous, sustainable living space.Below the stairs, a serene landscape garden flourishes, while next to it, a double-glazed window floods the space with ample light, augmenting the interior's airy ambiance.Within the sleek contemporary interior, abundant natural light pours in through expansive windows, creating an airy and revitalizing atmosphere. The chic and minimalist design effortlessly elevates the space, imbuing it with a touch of modern elegance.`,
+    client: "Mr. Jamshid",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //3 - Pente
+  {
+    id: "pente-residence",
+    projectBy: "abdulla",
+    title: "Pente",
+    experience: "9 years experience",
+    location: "Mangalam, Kerala",
+    area: "4000 sq.ft",
+    images: [
+      
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3a.JPG",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3b.JPG",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3c.JPG",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3d.JPG",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3e.JPG",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3f.JPG"
+    ],
+    pdfLink: null,
+    summary:
+      "A riverside residence maximizing views with layered decks and glass planes.",
+    description: ` The slope structure on right middle of design is an inspiration which focuses enabling contemporary style to ponder with the weather conditions and protect walls from whether stripping, It also act as a Place to install solar panels.A unique blend if contemporary design and sustainability framed with the concept Pente.`,
+    client: "Mr. Fasil",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //4 - The Hayal
+  {
+    id: "the-hayal",
+    projectBy: "abdulla",
+    title: "The Hayal",
+    experience: "8 years experience",
+    location: "Atholi, Kerala",
+    area: "8000 sq.ft",
+    images: [
+      
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/project.jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4e.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p5d.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A garden-forward villa where inside and outside meet through long thresholds.",
+    description: `Nestled amidst a lush and serene natural landscape, this luxurious contemporary house stands as a harmonious blend of modern opulence and organic beauty. The residence is a stunning testament to the seamless integration of architecture and nature, creating a living space that transcends traditional boundaries.An "Everything in its place" concept design. A modern contemporary design in its mild colors of gray, black, beige, white, cement texture and the golden luxury touch.A luxury contemporary interior which is not only a visual delight but a sensory experience too, where the marriage of elegant design and the embrace of nature converge to provide an exquisite living environment.`,
+    client: "Mr. Noushad",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //5 - The Heavenly Daze
+  {
+    id: "heavenly-daze",
+    projectBy: "abdulla",
+    title: "The Heavenly Daze",
+    experience: "8 years experience",
+    location: "Pookkottur, Malappuram",
+    area: "7500 sq.ft",
+    images: [
+      
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1b1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1d.jpg",
+      // "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1e.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A refined urban home blending functional planning with warm, contemporary interiors.",
+    description: `An Existing natural plantation adds beauty to the exterior as well as accelerates the air flow.It carries a combination of wood, glass and cladding at its elevation.Contemporary modern house, created in such a way that it provides a feel like it is just placed in the middle of nature.`,
+    client: "Mr. Sameer",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //6 - Fiera Vista
+  {
+    id: "fiera-vista",
+    projectBy: "abdulla",
+    title: "Fiera Vista",
+    experience: "7 years experience",
+    location: "Kottakkal, Kerala",
+    area: "5000 sq.ft",
+    images: [
+      
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/project6.png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6e.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6f.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A vertical atrium stitches levels together, drawing daylight deep within.",
+    description: `Large door and window openings complement the openness and frame the view towards the exterior landscape which is mostly retained.A Modern minimalistic architecture use of glass, steel and reinforced concrete; the idea that form should follow function.`,
+    client: "Mr. Ubaid",
+    architect: "Abdulla Vasif",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+
+
   {
     id: "pathimangalam-residential",
     projectBy: "rasheed",
