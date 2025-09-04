@@ -652,6 +652,222 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     consultant: null,
     completed: "2019",
   },
+  // Rashiq projects
+
+
+
+
+  {
+    id: "villa-c",
+    projectBy: "rashiq",
+    title: "Villa C",
+    experience: "10 years experience",
+    location: "Al Furjan",
+    area: "900 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp1.jpeg",
+    
+    ],
+    pdfLink: null,
+    summary: "A modern residence balancing clean lines with warm materials for comfortable family living.",
+    description: `Modern Retreat A 4-bedroom villa on a 900 sqm site, featuring open-plan interiors, shaded terraces, and a private pool — ideal for a family of five who value both comfort and connectivity.`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Luxury Villa",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //2
+  {
+    id: "villa-b",
+    projectBy: "rashiq",
+    title: "Villa B",
+    experience: "9 years experience",
+    location: "Nad Al Sheba",
+    area: "1,800 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp2.jpeg",
+      
+    ],
+    pdfLink: null,
+    summary: "A courtyard-centric villa with layered facades and long thresholds to landscape.",
+    description: `A 7-bedroom custom-designed home on a 1,800 sqm plot, with a home gym, landscaped gardens, and a semi-covered pool — perfect for large family gatherings and indoor-outdoor living.`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Private Villa",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //3
+  {
+    id: "villa-a",
+    projectBy: "rashiq",
+    title: "Villa A",
+    experience: "8 years experience",
+    location: "Dubai South",
+    area: "1,200 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp3a.jpg",
+      
+    ],
+    pdfLink: null,
+    summary: "A compact urban home maximizing light, privacy, and usability within tight setbacks.",
+    description: `A 6-bedroom family residence on a 1,200 sqm plot, designed for a family of eight. Includes a double-height living area, rooftop lounge, and lush outdoor entertaining areas.`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Contemporary Villa",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //4
+  {
+    id: "cp-villa",
+    projectBy: "rashiq",
+    title: "CP Villa",
+    experience: "11 years experience",
+    location: "Dubai",
+    // area: "6000 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp4a.jpeg",
+      
+    ],
+    pdfLink: null,
+    summary: "A layered contemporary residence with floating slabs, screens, and brass accents.",
+    description: `This innovative Dubai villa concept features distinct ground-level living units,each with private access .Above, interconnected terraces and lush landscaping create a shared oasis, fostering community while maintaining privacyBridges seamlessly link the upper-level, offering residents a unique living experience and multi-levelenvironment`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+
+  //5
+  {
+    id: "sky-villas",
+    projectBy: "rashiq",
+    title: "Sky Villas",
+    experience: "10 years experience",
+    location: "Dubai",
+    area: "600 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp5a.jpg",
+     
+    ],
+    pdfLink: null,
+    summary: "A climate-responsive home with deep overhangs and shaded terraces for year-round comfort.",
+    description: `Premium Apartments designed for the modern social family.The project is located in one of the upcoming high value areas of Dubai. Each Apartment is designed as a duplex and has an area of around 600 Sqmts. with every area boasting great views on either side of the site, the apartment is designed to entertain.`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+
+  //6
+  {
+    id: "tanzania-building",
+    projectBy: "rashiq",
+    title: "TRA",
+
+    experience: "7 years experience",
+    location: " Tanzania",
+    // area: "3600 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp6a.jpg",
+    
+    ],
+    pdfLink: null,
+    summary: "A minimal cube massing punctured by courts that draw air and light indoors.",
+    description: `This iconic mixed-use tower features a dynamic, curvilinear facade of layered glass and metal panels, creating a scale-like texture Two interconnected volumes rise above a grand, arched entrance, housing offices and residences`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //7
+  {
+    id: "hilite-reality-residential-tower",
+    projectBy: "rashiq",
+    title: "Hilite Reality Residential Tower",
+    experience: "9 years experience",
+    location: "Dubai",
+  
+    // area: "5400 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp7a.jpg"
+    ],
+    pdfLink: null,
+    summary: "A villa stepping with terrain, framing valley views through cascading decks and glazing.",
+    description: `This residential building features a striking facade where balconies seamlessly extrude, creating a dynamic, layered texture The undulating forms of the balconies add visual interest and create a sense of movement The design emphasizes a connection between indoor and outdoor living, creating harmony for user`,
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Luxury Villa",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //8
+  {
+    id: "jardin-astral",
+    projectBy: "rashiq",
+    title: "Jardin Astral",
+    experience: "8 years experience",
+    location: "Dubai",
+    // area: "4000 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp8a.jpg",
+ 
+    ],
+    pdfLink: null,
+    summary: "Warm brass highlights and stone textures define this understated luxury home.",
+    description: `The residential building showcases modern elegance with layered terraces Strategically located, the design emphasizes open views and seamless integration with its urban surroundings The interplay of glass and metal enhances the building's elegance contemporary appeal`,
+    client: "Galaxy",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+  //9
+  {
+    id: "d-tower-residential-apartments",
+    projectBy: "rashiq",
+    title: "D-Tower Residential Apartments",
+
+    experience: "9 years experience",
+    location: "Dubai",
+    area: " 79,900 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp9a.jpg",
+      
+    ],
+    pdfLink: null,
+    summary: "A rhythmic facade of vertical screens and arches softens light and ensures privacy.",
+    description: `Design inspired by vertical urbanism, open terraces, an infinity pool, and public spaces A dynamic façade enhances aesthetics, while a green bridge visually unites the towers, offering an elevated oasis The design ensures panoramic views of the context`,
+
+    client: "Private Client",
+    architect: "Rashiq Muhamad Ali",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
 ];
 
 export default projectData;

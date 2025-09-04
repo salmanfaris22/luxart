@@ -45,7 +45,7 @@ const engineers = [
     title: "Founder of RqMA Architecture + Design",
     image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/architect2.jpg",
     projectBy: "rashiq",
-    hasProjects: false,
+    hasProjects: true,
   },
   {
     id: 6,
