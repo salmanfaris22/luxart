@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { MdArrowForward } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
 const engineers = [
   {
@@ -62,11 +62,15 @@ const ChooseExpert = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(null);
   const cardsContainerRef = useRef(null);
+  const sectionRef = useRef(null); // Reference to the entire section
   const autoScrollIntervalRef = useRef(null);
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(false); // Start as false
+  const [isInView, setIsInView] = useState(false); // Track if section is in view
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
 
   const handleCardClick = (engineer) => {
-    window.scrollTo(0, 0); // Changed to immediate scroll without smooth behavior
+    window.scrollTo(0, 0);
     localStorage.setItem("selectedArchitect", engineer.projectBy);
     navigate(`/projects`, {
       state: {
@@ -84,26 +88,88 @@ const ChooseExpert = () => {
     });
   };
 
-  // Auto-scroll functionality - only for desktop/tablet
+  // Keep track of whether we can scroll to the left/right
   useEffect(() => {
-    // Check if screen width is larger than phone size (768px)
+    const updateScrollAvailability = () => {
+      const container = cardsContainerRef.current;
+      if (!container) {
+        setCanScrollRight(false);
+        setCanScrollLeft(false);
+        return;
+      }
+      const atStart = container.scrollLeft <= 0;
+      const atEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 1;
+      setCanScrollLeft(!atStart);
+      setCanScrollRight(!atEnd);
+    };
+
+    // Initial check
+    updateScrollAvailability();
+
+    const container = cardsContainerRef.current;
+    if (container) {
+      container.addEventListener("scroll", updateScrollAvailability, { passive: true });
+    }
+    window.addEventListener("resize", updateScrollAvailability);
+
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", updateScrollAvailability);
+      }
+      window.removeEventListener("resize", updateScrollAvailability);
+    };
+  }, []);
+
+  // Intersection Observer to detect when section is in view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const inView = entry.isIntersecting;
+        setIsInView(inView);
+        
+        // Only enable auto-scroll when section is in view and on desktop/tablet
+        const isDesktopOrTablet = window.innerWidth > 768;
+        if (inView && isDesktopOrTablet) {
+          setIsAutoScrolling(true);
+        } else {
+          setIsAutoScrolling(false);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 // Trigger when 30% of the section is visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  // Auto-scroll functionality - only when section is in view
+  useEffect(() => {
     const isDesktopOrTablet = window.innerWidth > 768;
     
-    if (isAutoScrolling && cardsContainerRef.current && isDesktopOrTablet) {
+    if (isAutoScrolling && cardsContainerRef.current && isDesktopOrTablet && isInView) {
       autoScrollIntervalRef.current = setInterval(() => {
         if (cardsContainerRef.current) {
           const container = cardsContainerRef.current;
-          const scrollAmount = 280; // Scroll by one card width + gap
+          const scrollAmount = 280;
           
           if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
-            // If we've reached the end (with small tolerance), scroll back to the beginning
             container.scrollTo({ left: 0, behavior: 'smooth' });
           } else {
-            // Scroll to the right
             container.scrollTo({ left: container.scrollLeft + scrollAmount, behavior: 'smooth' });
           }
         }
-      }, 4000); // Auto-scroll every 4 seconds for better user experience
+      }, 4000);
     }
 
     return () => {
@@ -111,7 +177,7 @@ const ChooseExpert = () => {
         clearInterval(autoScrollIntervalRef.current);
       }
     };
-  }, [isAutoScrolling]);
+  }, [isAutoScrolling, isInView]);
 
   // Navigation functions
   const handlePrevClick = () => {
@@ -120,9 +186,10 @@ const ChooseExpert = () => {
       const scrollAmount = 280;
       container.scrollTo({ left: container.scrollLeft - scrollAmount, behavior: 'smooth' });
     }
-    // Pause auto-scroll when manually navigating
     setIsAutoScrolling(false);
-    setTimeout(() => setIsAutoScrolling(true), 5000); // Resume after 5 seconds
+    setTimeout(() => {
+      if (isInView) setIsAutoScrolling(true);
+    }, 5000);
   };
 
   const handleNextClick = () => {
@@ -131,22 +198,34 @@ const ChooseExpert = () => {
       const scrollAmount = 280;
       container.scrollTo({ left: container.scrollLeft + scrollAmount, behavior: 'smooth' });
     }
-    // Pause auto-scroll when manually navigating
     setIsAutoScrolling(false);
-    setTimeout(() => setIsAutoScrolling(true), 5000); // Resume after 5 seconds
+    setTimeout(() => {
+      if (isInView) setIsAutoScrolling(true);
+    }, 5000);
   };
 
-  // Pause auto-scroll on hover
+  // Pause auto-scroll on hover (only if section is in view)
   const handleContainerMouseEnter = () => {
-    setIsAutoScrolling(false);
+    if (isInView) {
+      setIsAutoScrolling(false);
+    }
   };
 
   const handleContainerMouseLeave = () => {
-    setIsAutoScrolling(true);
+    if (isInView) {
+      setIsAutoScrolling(true);
+    }
+  };
+
+  const viewButtonInline = {
+    // Remove positioning overrides to let CSS absolute positioning work
+    opacity: 1,
+    transform: "none",
+    animation: "none",
   };
 
   return (
-    <section className="choose-expert" id="projects">
+    <section className="choose-expert" id="projects" ref={sectionRef}>
       <h2 className="choose-expert__title">
         Our empanelled <span className="highlight">Architects</span>
       </h2>
@@ -168,12 +247,15 @@ const ChooseExpert = () => {
             background: "rgba(244, 211, 0, 0.1)",
             backdropFilter: "blur(10px)",
             color: "#f4d300",
-            cursor: "pointer",
+            cursor: canScrollLeft ? "pointer" : "not-allowed",
             transition: "all 0.3s ease",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
+            opacity: canScrollLeft ? 1 : 0.3,
+            pointerEvents: canScrollLeft ? "auto" : "none",
+            filter: canScrollLeft ? "none" : "blur(2px)"
           }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -202,31 +284,25 @@ const ChooseExpert = () => {
                 alt={engineer.name}
                 className="expert-card__image"
               />
+              {/* Hover overlay disabled per request */}
+            </div>
+            <div className="expert-card__info">
+              <div className="expert-card__meta"></div>
+              <h3 className="expert-card__name">{engineer.name}</h3>
+              <p className="expert-card__role">{engineer.title}</p>
               {engineer.hasProjects && (
                 <button
                   className="expert-card__projects-badge"
+                  style={viewButtonInline}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleCardClick(engineer);
                   }}
                 >
                   <span className="badge-text">View Projects</span>
-                  <MdArrowForward className="badge-icon" />
+                  <GoArrowUpRight className="badge-icon" />
                 </button>
               )}
-              {hovered === engineer.id && (
-                <div
-                  className="expert-card__hover-overlay"
-                  style={{ left: position.x, top: position.y }}
-                >
-                  <span>View</span>
-                </div>
-              )}
-            </div>
-            <div className="expert-card__info">
-              <div className="expert-card__meta"></div>
-              <h3 className="expert-card__name">{engineer.name}</h3>
-              <p className="expert-card__role">{engineer.title}</p>
             </div>
           </div>
         ))}
@@ -243,12 +319,15 @@ const ChooseExpert = () => {
             background: "rgba(244, 211, 0, 0.1)",
             backdropFilter: "blur(10px)",
             color: "#f4d300",
-            cursor: "pointer",
+            cursor: canScrollRight ? "pointer" : "not-allowed",
             transition: "all 0.3s ease",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
+            opacity: canScrollRight ? 1 : 0.3,
+            pointerEvents: canScrollRight ? "auto" : "none",
+            filter: canScrollRight ? "none" : "blur(2px)"
           }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -274,31 +353,25 @@ const ChooseExpert = () => {
                 alt={engineer.name}
                 className="expert-card__image"
               />
+              {/* Hover overlay disabled per request */}
+            </div>
+            <div className="expert-card__info">
+              <div className="expert-card__meta"></div>
+              <h3 className="expert-card__name">{engineer.name}</h3>
+              <p className="expert-card__role">{engineer.title}</p>
               {engineer.hasProjects && (
                 <button
                   className="expert-card__projects-badge"
+                  style={viewButtonInline}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleCardClick(engineer);
                   }}
                 >
                   <span className="badge-text">View Projects</span>
-                  <MdArrowForward className="badge-icon" />
+                  <GoArrowUpRight className="badge-icon" />
                 </button>
               )}
-              {hovered === engineer.id && (
-                <div
-                  className="expert-card__hover-overlay"
-                  style={{ left: position.x, top: position.y }}
-                >
-                  <span>View</span>
-                </div>
-              )}
-            </div>
-            <div className="expert-card__info">
-              <div className="expert-card__meta"></div>
-              <h3 className="expert-card__name">{engineer.name}</h3>
-              <p className="expert-card__role">{engineer.title}</p>
             </div>
           </div>
         ))}

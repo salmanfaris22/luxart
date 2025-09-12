@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../src/assets/luxartlogo.svg";
-import phoneIcon from "../../src/assets/Phone.svg";
+import logo from "../assets/luxartlogo.svg";
+import phoneIcon from "../assets/Phone.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
