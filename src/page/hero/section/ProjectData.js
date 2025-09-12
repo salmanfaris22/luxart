@@ -273,6 +273,34 @@ The location in Kozhikode provides excellent connectivity to major government in
   },
 
 
+  {
+    id: "riyas-residence",
+    projectBy: "shabeer",
+    title: "Riyas Residence",
+    experience: "10 years experience",
+    location: "Kondotty",
+    area: "6970 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/shabeer-p3-a.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/shabeer-p3-b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/shabeer-p3-c.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/shabeer-p3-d.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/saleel-sabeer-projects/shabeer-p3-e.jpg"
+    ],
+    pdfLink: null,
+    summary:
+      "A contemporary family residence emphasizing natural light, cross ventilation, and warm material palette.",
+    description: `The client for the Residence at Pookottur wanted a luxurious home that reflects a blend of traditional and modern aesthetics. The house features elegant slant roofs, rich wooden interiors, and large glass windows that allow natural light to flood in. The surrounding area is meticulously landscaped with tiled pathways and curated greenery, enhancing the ambiance. With spacious rooms outfitted with modern amenities, the residence offers comfort, style, and a seamless connection with nature, making it an ideal family haven.`,
+    client: "Mr. Riyas",
+    architect: "Shabeer Saleel Associates",
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+  },
+
+
+
   //1 - Casa Encanto
   {
     id: "casa-encanto",
