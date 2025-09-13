@@ -55,6 +55,14 @@ const engineers = [
     projectBy: "abdulla",
     hasProjects: true,
   },
+  {
+    id: 7,
+    name: "Ar Cyan Francis",
+    title: "ETECH STUDIO Architecture + Interior",
+    image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/engineer6.jpeg",
+    projectBy: "cyan",
+    hasProjects: false,
+  },
 ];
 
 const ChooseExpert = () => {
