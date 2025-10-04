@@ -18,6 +18,8 @@ const Projects = () => {
     "kondotty",
     "pavangad",
     "kalamassery",
+    "Proposed Residence",
+    "Proposed Residence 2",
   ];
 
   // Ordered list for homepage display

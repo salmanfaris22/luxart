@@ -216,6 +216,18 @@ The location in Kozhikode provides excellent connectivity to major government in
     contractor: null,
     consultant: "P C Rasheed",
   },
+
+
+
+
+
+
+
+
+
+
+
+
   {
     id: "muthuthala-residence",
     projectBy: "shabeer",
@@ -241,6 +253,10 @@ The location in Kozhikode provides excellent connectivity to major government in
     contractor: null,
     consultant: null,
   },
+
+
+
+
 
 
 
@@ -504,6 +520,77 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     contractor: "P C Rasheed",
     consultant: "P C Rasheed",
   },
+
+
+
+
+  {
+    id: "Proposed Residence",
+    projectBy: "rasheed",
+    title: "Proposed Residence",
+    experience: "15 years experience",
+    location: "Odumbra, Kozhikode",
+    area: "4656 sq.ft",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(1).png",//1
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(2).png",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(3).png",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(4).png",//4
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(5).png",//5
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p1(6).png",//6
+    ],
+    pdfLink: null,
+    summary:
+      "A residential building project in Odumbra, Kozhikode, featuring modern architectural design and contemporary living spaces. This project showcases professional residential development with attention to detail and quality construction standards.",
+    description: `The Residential Building at Odumbra represents a modern residential development project designed to meet contemporary living standards. Located in the well-connected area of Odumbra, Kozhikode, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
+
+The building design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for residents.
+
+The location in Odumbra provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
+    client: "Fuhad",
+    architect: "P C Rasheed",
+    projectType: "Residential Project",
+    designTeam: "P C Rasheed",
+    contractor: "P C Rasheed",
+    consultant: "P C Rasheed",
+  },
+
+
+
+
+  {
+    id: "Proposed Residence 2",
+    projectBy: "rasheed",
+    title: "",
+    experience: "15 years experience",
+    location: "",
+    area: "",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(1).png",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(2).png",//2
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(3).png",//3
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(4).png",//4
+     
+    ],
+    pdfLink: null,
+    summary:
+      "A residential building project in Odumbra, Kozhikode, featuring modern architectural design and contemporary living spaces. This project showcases professional residential development with attention to detail and quality construction standards.",
+    description: `The Residential Building at Odumbra represents a modern residential development project designed to meet contemporary living standards. Located in the well-connected area of Odumbra, Kozhikode, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
+
+The building design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for residents.
+
+The location in Odumbra provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
+    client: "",
+    architect: "P C Rasheed",
+    projectType: "Residential Project",
+    designTeam: "P C Rasheed",
+    contractor: "P C Rasheed",
+    consultant: "P C Rasheed",
+  },
+
+
+
+
   {
     id: "baith-Imthiyas",
     projectBy: "imthiyas",

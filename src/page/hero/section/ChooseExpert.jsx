@@ -59,7 +59,7 @@ const engineers = [
     id: 7,
     name: "Ar Cyan Francis",
     title: "ETECH STUDIO Architecture + Interior",
-    image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/engineer6.jpeg",
+    image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/engineer6new.jpeg",
     projectBy: "cyan",
     hasProjects: false,
   },
