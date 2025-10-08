@@ -561,10 +561,10 @@ The location in Odumbra provides excellent connectivity to Kozhikode's major fac
   {
     id: "Proposed Residence 2",
     projectBy: "rasheed",
-    title: "",
+    title: "Manarkkad Residence",
     experience: "15 years experience",
-    location: "",
-    area: "",
+    location: "Manarkkad",
+    area: "4500 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(1).png",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(2).png",//2
@@ -580,7 +580,7 @@ The location in Odumbra provides excellent connectivity to Kozhikode's major fac
 The building design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for residents.
 
 The location in Odumbra provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
-    client: "",
+    client: "Abdul Latheef",
     architect: "P C Rasheed",
     projectType: "Residential Project",
     designTeam: "P C Rasheed",
