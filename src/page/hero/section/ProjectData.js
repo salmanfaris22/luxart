@@ -74,7 +74,7 @@ The property is well-connected to major roads and public transportation, making 
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadb.jpg",//2
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangad.jpg",//3
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadc.jpg",//4
-     
+
 
     ],
     pdfLink: null,
@@ -137,9 +137,9 @@ The location provides excellent connectivity to nearby towns and cities, making 
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery4+(1).jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery5+(1).jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery6+(1).jpg",
-     
+
     ],
-    
+
     pdfLink: kalamassery,
     summary:
       "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",
@@ -216,18 +216,6 @@ The location in Kozhikode provides excellent connectivity to major government in
     contractor: null,
     consultant: "P C Rasheed",
   },
-
-
-
-
-
-
-
-
-
-
-
-
   {
     id: "muthuthala-residence",
     projectBy: "shabeer",
@@ -253,14 +241,6 @@ The location in Kozhikode provides excellent connectivity to major government in
     contractor: null,
     consultant: null,
   },
-
-
-
-
-
-
-
-
 
   {
     id: "pookottur-residence",
@@ -326,12 +306,12 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: " Mannarkkad, Kerala",
     area: "22,000 sq.ft",
     images: [
-      
+
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2a.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2b.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2d.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2e.jpg",
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2f.jpg"   
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p2f.jpg"
     ],
     pdfLink: null,
     summary:
@@ -381,7 +361,7 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Mangalam, Kerala",
     area: "4000 sq.ft",
     images: [
-      
+
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3a.JPG",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3b.JPG",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p3c.JPG",
@@ -410,7 +390,7 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Atholi, Kerala",
     area: "8000 sq.ft",
     images: [
-      
+
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/project.jpeg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4a.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p4b.jpg",
@@ -439,7 +419,7 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Pookkottur, Malappuram",
     area: "7500 sq.ft",
     images: [
-      
+
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1a.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1b.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p1b1.jpg",
@@ -468,7 +448,7 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Kottakkal, Kerala",
     area: "5000 sq.ft",
     images: [
-      
+
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/project6.png",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6a.jpg",
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/abdulla-vasif-projects/vasif-p6c.jpg",
@@ -570,7 +550,7 @@ The location in Odumbra provides excellent connectivity to Kozhikode's major fac
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(2).png",//2
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(3).png",//3
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rasheed-project/rasheed-p2(4).png",//4
-     
+
     ],
     pdfLink: null,
     summary:
@@ -781,7 +761,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     area: "900 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp1.jpeg",
-    
+
     ],
     pdfLink: null,
     summary: "A modern residence balancing clean lines with warm materials for comfortable family living.",
@@ -804,7 +784,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     area: "1,800 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp2.jpeg",
-      
+
     ],
     pdfLink: null,
     summary: "A courtyard-centric villa with layered facades and long thresholds to landscape.",
@@ -827,7 +807,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     area: "1,200 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp3a.jpg",
-      
+
     ],
     pdfLink: null,
     summary: "A compact urban home maximizing light, privacy, and usability within tight setbacks.",
@@ -850,7 +830,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     // area: "6000 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp4a.jpeg",
-      
+
     ],
     pdfLink: null,
     summary: "A layered contemporary residence with floating slabs, screens, and brass accents.",
@@ -874,7 +854,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     area: "600 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp5a.jpg",
-     
+
     ],
     pdfLink: null,
     summary: "A climate-responsive home with deep overhangs and shaded terraces for year-round comfort.",
@@ -899,7 +879,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     // area: "3600 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp6a.jpg",
-    
+
     ],
     pdfLink: null,
     summary: "A minimal cube massing punctured by courts that draw air and light indoors.",
@@ -919,7 +899,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     title: "Hilite Reality Residential Tower",
     experience: "9 years experience",
     location: "Dubai",
-  
+
     // area: "5400 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp7a.jpg"
@@ -945,7 +925,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     // area: "4000 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp8a.jpg",
- 
+
     ],
     pdfLink: null,
     summary: "Warm brass highlights and stone textures define this understated luxury home.",
@@ -969,7 +949,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     area: " 79,900 sq.ft",
     images: [
       "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/rashiq-projects/rashiqp9a.jpg",
-      
+
     ],
     pdfLink: null,
     summary: "A rhythmic facade of vertical screens and arches softens light and ensures privacy.",
@@ -981,6 +961,142 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     designTeam: null,
     contractor: null,
     consultant: null,
+  },
+
+  {
+    id: "nidhi-residency",
+    projectBy: "cyan",
+    title: "Nidhi Residency",
+    experience: "Heritage Restoration Specialist",
+    location: "Athanikkal, Calicut (Near Calicut University)",
+    area: "3.5 Acres",
+    images: [
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/bedroom.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Bedroom_1.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/bedroom1.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Dining.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Dining3.jpg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Formallivin.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Idanazh.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Idanazhi3.jpg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Kitche.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Kitchen.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Masterbedroo.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Masterbedroom.jpeg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Utility.jpg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/Utility2.jpg", "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/ArCyanFrancis/verand.jpeg"
+    ],
+    pdfLink: null,
+    summary:
+      "Nidhi Residency is an 85-year-old Kerala house restored in Athanikkal, Calicut. The project revives the original vernacular architecture using traditional materials and techniques with modern structural upgrades. New extensions use laterite and brick to match the old structure. Interiors use terracotta and patterned tiles with concealed modern services. The exterior and roof were repaired with heritage-friendly finishes, and the landscape uses native plants and stone paths. The result is a home that preserves cultural identity while supporting modern living.",
+    description: `Nidhi Residency is a restored 85-year-old traditional Kerala home located in Athanikkal, Calicut, set within a serene 3.5-acre property. Designed for Mr. Shanthakumar, this project goes far beyond a renovation—it is a careful revival of a vernacular residence that holds deep cultural value. The home was brought back to life using original Kerala building techniques, traditional materials, and sensitive design decisions that respect its heritage identity.
+
+The structure was strengthened using a combination of traditional joinery and modern stabilization methods, while the roof, walls, and timber elements were restored with lime plaster, clay tiles, and original wooden detailing. Extensions were added with laterite and brick masonry to blend seamlessly with the old structure, ensuring that new spaces feel like they have always belonged.
+
+Inside the house, the flooring was recreated using a warm combination of terracotta and Moroccan-patterned tiles, maintaining a cultural character while improving durability. Electrical and plumbing systems were completely upgraded to modern standards, concealed carefully so as not to disturb the old-world charm. Exterior upliftment included restoring the façade, replacing damaged roof tiles, treating timber elements, and introducing breathable heritage-friendly finishes.
+
+The surrounding landscape was developed using native Kerala plants, stone pathways, and traditional sit-out elements, creating a natural extension of the architecture into the site. The overall design balances the emotional value of a historic home with the comfort and functionality needed for contemporary living.
+
+Nidhi Residency stands today as a harmonious blend of past and present—a home that preserves its original story while embracing a renewed life through thoughtful design, craftsmanship, and respect for Kerala's architectural heritage.
+
+**Project Brief**
+
+Nidhi Residency is the restoration of an 85-year-old traditional Kerala home, a precious piece of vernacular architecture that stands as a testament to the region's cultural richness. Set within a serene 3.5-acre site in Athanikkal, the project focuses on reviving the original soul of the home using traditional building techniques while carefully upgrading its stability, safety, and modern functionality.
+
+More than a renovation, this project is a heritage conservation effort—an attempt to celebrate Kerala's architectural identity while seamlessly integrating contemporary living solutions.
+
+**Design Intent**
+
+The vision for Nidhi Residency was to preserve the warmth, proportions, and craftsmanship of an old Kerala home while ensuring it meets modern standards of comfort and safety.
+
+The design respects the original layout, material palette, and detailing, while introducing extensions and services that blend effortlessly rather than disrupt.
+
+The result is a harmonious dialogue between past and present, where every space reflects cultural authenticity anchored with modern usability.`,
+    client: "Mr. Shanthakumar",
+    architect: "Ar Cyan Francis",
+    projectType: "Residential Restoration (More than a Renovation)",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    scopeOfWork: [
+      {
+        title: "Architectural Restoration",
+        points: [
+          "Detailed documentation and evaluation of the old structure",
+          "Strengthening of foundations, timber elements, and roof structure",
+          "Restoration using traditional materials (lime plaster, clay tiles, timber joinery)",
+          "Retention of heritage elements—wooden windows, carved frames, columns, and eaves",
+          "Sensitive integration of modern services without altering the architectural character"
+        ]
+      },
+      {
+        title: "Extension & Masonry Works",
+        points: [
+          "Masonry additions using laterite/brick to match the original vocabulary",
+          "Proper foundation design and safe load transfer",
+          "New walls, openings, and rooms crafted to blend seamlessly with the old house",
+          "Moisture-proofing and termite-protection systems"
+        ]
+      },
+      {
+        title: "Interior Finishes & Flooring",
+        points: [
+          "Heritage-inspired flooring with terracotta and Moroccan tile combinations",
+          "Oxide finishes and wooden textures for cultural warmth",
+          "Matching textures and details between old and new blocks",
+          "Smooth transitions and skirting details"
+        ]
+      },
+      {
+        title: "Electrical & Plumbing Upgradation",
+        points: [
+          "Complete rewiring to meet IS safety standards",
+          "Concealed conduits done without damaging heritage elements",
+          "Modern electrical provisions (AC, heaters, kitchen appliances, landscape lighting)",
+          "Plumbing redesign with CPVC/UPVC lines, new sanitary fittings, improved drainage"
+        ]
+      },
+      {
+        title: "Exterior Uplifting",
+        points: [
+          "Lime-based plaster restoration and breathable heritage paint finishes",
+          "Roof tile cleaning and replacement",
+          "Timber polishing and treatment",
+          "Façade enhancement with traditional Kerala detailing",
+          "Improved verandah, entrance, and shading elements"
+        ]
+      },
+      {
+        title: "Landscaping & Site Development",
+        points: [
+          "Native Kerala softscaping and tropical planting",
+          "Pathways, courtyards, and sit-outs designed to complement the natural setting",
+          "Stone paving, gravel beds, and subtle lighting",
+          "Integration of traditional landscape elements for visual harmony"
+        ]
+      }, {
+        title: "Project Vision ",
+        points: [
+          "To revive a heritage home using authentic Kerala construction techniques",
+          "To strengthen the structure for long-term safety ",
+          "To create thoughtful extensions that blend with the original ",
+          "To incorporate modern amenities without disturbing the cultural character ",
+          "To craft a residence that is both a living story and a functional modern home ",
+        ]
+      }, {
+        title: "Budget & Timeline",
+        points: [
+          "Construction Budget: ₹52 Lakhs ",
+          "Interior Budget: ₹25 Lakhs",
+          "Design Timeline: 4 Months",
+          "Construction Timeline: 1.5 Years",
+          "Execution Phases: Phase 1 – Structure, Phase 2 – Interiors",
+        ]
+      }, {
+        title: "Challenges",
+        points: [
+          "Restoring a very old structure without erasing its identity",
+          "Ensuring structural safety with minimal demolition ",
+          "Ensuring structural safety with minimal demolition ",
+        ]
+      }, {
+        title: "Key Highlights",
+        points: [
+          "A rare restoration of an 85-year-old Kerala home ",
+          "Perfect blend of vernacular architecture and modern comfort ",
+          "Traditional materials and detailing preserved with precision",
+          "Extensions designed to appear as part of the original home ",
+          "Cultural storytelling through flooring, textures, and handcrafted elements"
+        ]
+      }
+    ],
   },
 
 ];

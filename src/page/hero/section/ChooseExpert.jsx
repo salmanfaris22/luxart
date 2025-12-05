@@ -61,7 +61,7 @@ const engineers = [
     title: "ETECH STUDIO Architecture + Interior",
     image: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/engineers/engineer6new.jpeg",
     projectBy: "cyan",
-    hasProjects: false,
+    hasProjects: true,
   },
 ];
 
@@ -134,7 +134,7 @@ const ChooseExpert = () => {
       ([entry]) => {
         const inView = entry.isIntersecting;
         setIsInView(inView);
-        
+
         // Only enable auto-scroll when section is in view and on desktop/tablet
         const isDesktopOrTablet = window.innerWidth > 768;
         if (inView && isDesktopOrTablet) {
@@ -164,13 +164,13 @@ const ChooseExpert = () => {
   // Auto-scroll functionality - only when section is in view
   useEffect(() => {
     const isDesktopOrTablet = window.innerWidth > 768;
-    
+
     if (isAutoScrolling && cardsContainerRef.current && isDesktopOrTablet && isInView) {
       autoScrollIntervalRef.current = setInterval(() => {
         if (cardsContainerRef.current) {
           const container = cardsContainerRef.current;
           const scrollAmount = 280;
-          
+
           if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
             container.scrollTo({ left: 0, behavior: 'smooth' });
           } else {
@@ -271,7 +271,7 @@ const ChooseExpert = () => {
           </svg>
         </div>
 
-        <div 
+        <div
           className="choose-expert__cards"
           ref={cardsContainerRef}
           onMouseEnter={handleContainerMouseEnter}

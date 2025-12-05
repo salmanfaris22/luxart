@@ -87,7 +87,43 @@ export default function NewProjectDetail() {
     window.location.href = `/projects/${nextProject.id}`;
   };
 
-  
+  // Function to parse description and render markdown headings
+  const renderDescription = (text) => {
+    if (!text) return null;
+
+    // Split by double newlines to get paragraphs
+    const paragraphs = text.split(/\n\n+/);
+
+    return paragraphs.map((para, index) => {
+      const trimmedPara = para.trim();
+
+      // Check if it's a markdown heading (starts with ** and ends with **)
+      if (trimmedPara.match(/^\*\*.*\*\*$/)) {
+        const headingText = trimmedPara.replace(/\*\*/g, "");
+        return (
+          <h3 key={index} className="description-heading">
+            {headingText}
+          </h3>
+        );
+      }
+
+      // Regular paragraph
+      if (trimmedPara) {
+        return (
+          <p key={index}>
+            {trimmedPara.split("\n").map((line, lineIndex, array) => (
+              <React.Fragment key={lineIndex}>
+                {line}
+                {lineIndex < array.length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </p>
+        );
+      }
+
+      return null;
+    });
+  };
 
   return (
     <section className="new-project-detail">
@@ -142,7 +178,7 @@ export default function NewProjectDetail() {
         <div className="new-project-detail__description">
           <div className="description-content">
             <div className="description-text">
-              <p>{project.description}</p>
+              {renderDescription(project.description)}
             </div>
 
             <div className="new-project-detail__credits">
@@ -161,6 +197,24 @@ export default function NewProjectDetail() {
             </div>
           </div>
         </div>
+
+        {/* Scope of Work Section */}
+        {project?.scopeOfWork && project.scopeOfWork.length > 0 && (
+          <div className="new-project-detail__scope">
+            <div className="scope-grid">
+              {project.scopeOfWork.map((scope, index) => (
+                <div key={index} className="scope-card">
+                  <h3 className="scope-card__title">{scope.title}</h3>
+                  <ul className="scope-card__points">
+                    {scope.points.map((point, pointIndex) => (
+                      <li key={pointIndex}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Swiper Carousel Section */}
         <div className="new-project-detail__swiper-container">
@@ -243,31 +297,35 @@ export default function NewProjectDetail() {
         </div>
 
         {/* Navigation Section */}
-        <div className="new-project-detail__navigation">
-          <button
-            className="nav-button nav-button--prev"
-            onClick={handlePreviousProject}
-          >
-            <FaChevronLeft className="nav-icon" />
-            <div className="nav-text">
-              <span className="nav-label">Previous Project</span>
-              <span className="nav-title">
-                {trimTitle(previousProject.title)}
-              </span>
-            </div>
-          </button>
+        {navigationProjects.length > 1 && (
+          <div className="new-project-detail__navigation">
+            <button
+              className="nav-button nav-button--prev"
+              onClick={handlePreviousProject}
+            >
+              <FaChevronLeft className="nav-icon" />
+              <div className="nav-text">
+                <span className="nav-label">Previous Project</span>
+                <span className="nav-title">
+                  {trimTitle(previousProject.title)}
+                </span>
+              </div>
+            </button>
 
-          <button
-            className="nav-button nav-button--next"
-            onClick={handleNextProject}
-          >
-            <div className="nav-text">
-              <span className="nav-label">Next Project</span>
-              <span className="nav-title">{trimTitle(nextProject.title)}</span>
-            </div>
-            <FaChevronRight className="nav-icon" />
-          </button>
-        </div>
+            <button
+              className="nav-button nav-button--next"
+              onClick={handleNextProject}
+            >
+              <div className="nav-text">
+                <span className="nav-label">Next Project</span>
+                <span className="nav-title">
+                  {trimTitle(nextProject.title)}
+                </span>
+              </div>
+              <FaChevronRight className="nav-icon" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
