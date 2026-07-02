@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../../../Components/ProjectCard";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import projectData from "./ProjectData";
 
 const Projects = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
   const isHomePage = location.pathname === "/";
@@ -93,11 +92,6 @@ const Projects = () => {
     }
   };
 
-  const handleShowAll = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/projects");
-  };
-
   // Get projects in the correct order for display
   const getOrderedProjects = () => {
     if (isHomePage) {
@@ -165,27 +159,7 @@ const Projects = () => {
               </span>
             )}
           </h2>
-          <p className="projects__subtitle">
-            Transforming dreams into architectural masterpieces, one exceptional
-            space at a time
-            {selectedArchitect && (
-              <span className="projects__filter-subtitle">
-                {" "}
-                {/* Showing projects by {selectedArchitect} */}
-              </span>
-            )}
-          </p>
         </div>
-        {/* {selectedArchitect && isProjectsPage && (
-          <button className="projects__button" onClick={clearFilter}>
-            Show Main Projects
-          </button>
-        )} */}
-        {!isProjectsPage && (
-          <button className="projects__button" onClick={handleShowAll}>
-            View Projects
-          </button>
-        )}
       </div>
 
       {groupedProjects.map((projectGroup, groupIndex) => (
@@ -205,10 +179,7 @@ const Projects = () => {
                     <ProjectCard
                       className={getCardClass(overallIndex)}
                       image={project.images[0]}
-                      location={project.location}
-                      area={project.area}
                       title={project.title}
-                      architect={project.architect}
                     />
                   </Link>
                 </div>

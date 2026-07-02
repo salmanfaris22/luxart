@@ -5,69 +5,43 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import thumb1 from "../../../assets/oneImg.jpeg";
-import thumb2 from "../../../assets/fourImg.jpeg";
-import thumb3 from "../../../assets/threeImg.jpeg";
-import thumb4 from "../../../assets/twoImg.jpeg";
+import reel1Video from "../../../assets/videos/reel-1.mp4";
+import reel1Thumb from "../../../assets/videos/reel-1.jpg";
+import reel2Video from "../../../assets/videos/reel-2.mp4";
+import reel2Thumb from "../../../assets/videos/reel-2.jpg";
+import reel3Video from "../../../assets/videos/reel-3.mp4";
+import reel3Thumb from "../../../assets/videos/reel-3.jpg";
+import reel4Video from "../../../assets/videos/reel-4.mp4";
+import reel4Thumb from "../../../assets/videos/reel-4.jpg";
+import reel5Video from "../../../assets/videos/reel-5.mp4";
+import reel5Thumb from "../../../assets/videos/reel-5.jpg";
 
 const videos = [
   {
     id: 1,
-    thumbnail: thumb1,
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video1.mp4",
+    thumbnail: reel1Thumb,
+    src: reel1Video,
   },
   {
     id: 2,
-    thumbnail: thumb2,
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video2.mp4",
+    thumbnail: reel2Thumb,
+    src: reel2Video,
   },
   {
     id: 3,
-    thumbnail: thumb3,
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video3.mp4",
+    thumbnail: reel3Thumb,
+    src: reel3Video,
   },
   {
     id: 4,
-    thumbnail: thumb4,
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video4.mp4",
+    thumbnail: reel4Thumb,
+    src: reel4Video,
   },
   {
     id: 5,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb5.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video5.mp4",
+    thumbnail: reel5Thumb,
+    src: reel5Video,
   },
-  {
-    id: 6,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb6.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video6.mp4",
-  },
-  {
-    id: 7,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb7.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video7.mp4",
-  },
-  {
-    id: 8,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb8.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video8.mp4",
-  },
-  {
-    id: 9,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb9.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video9.mp4",
-  },
-  {
-    id: 10,
-    thumbnail:
-      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video-thumb10.jpg",
-    src: "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/luxart-video/lux-video10.mp4",
-  },
- 
 ];
 
 const VideoGallery = () => {
