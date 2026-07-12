@@ -146,50 +146,7 @@ const Projects = () => {
     );
   }
 
-  return (
-    <section className="projects">
-      <div className="projects__header">
-        <div>
-          <h2 className="projects__title">
-            Our <span>Signature</span> Projects
-            {selectedArchitect && (
-              <span className="projects__filter-info">
-                {" "}
-                {/* - by {selectedArchitect} */}
-              </span>
-            )}
-          </h2>
-        </div>
-      </div>
-
-      {groupedProjects.map((projectGroup, groupIndex) => (
-        <div
-          key={groupIndex}
-          className={`projects__row ${getRowClass(groupIndex * 2)}`}
-        >
-          <div className="projects__grid">
-            {projectGroup.map((project, projectIndex) => {
-              const overallIndex = groupIndex * 2 + projectIndex;
-              return (
-                <div
-                  key={project.id}
-                  className={`projects__item ${getItemClass(overallIndex)}`}
-                >
-                  <Link to={`/projects/${project.id}`}>
-                    <ProjectCard
-                      className={getCardClass(overallIndex)}
-                      image={project.images[0]}
-                      title={project.title}
-                    />
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ))}
-    </section>
-  );
+  return null;
 };
 
 export default Projects;
